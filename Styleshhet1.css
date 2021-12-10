@@ -1,0 +1,27 @@
+
+h4{
+    font-size: 60px;
+}
+#center{
+    text-align: center;
+    background-color: yellow;
+}
+p{
+    text-align:center;
+    color: darkred;
+    width: ;
+}
+.thumbsimg{
+    height: 70px;
+    width: 70px;
+}
+*{
+    color: indianred;
+}
+h2, h3{
+    text-align: center;
+    color: sandybrown;
+}
+div p {
+  background-color: magenta;
+}
