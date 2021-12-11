@@ -9,12 +9,12 @@ div.relative {
   position: relative;
   left: 50px;
 }
-.center {
+.centerb {
 	text-align: center;
 	border: 1px;
 	border-style: solid;
-	border-color: red;
-	color: red;
+	border-color: darkred;
+	color: darkred;
 	margin: auto;
 }
 table {
@@ -29,4 +29,24 @@ td {
 	border: 1px;
 	border-style: solid;
 	border-color: grey;
-}}
+}
+img {
+		width: 50%;
+		height: 50%;
+		border:  8px;
+		border-style: solid;
+		border-color: darkorange;
+		margin: 75px;
+}
+.center {
+	text-align: center;
+	margin: auto;
+}
+ol.a {
+  list-style-type: upper-roman;
+}
+body {
+  background-image: url("6919748.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
