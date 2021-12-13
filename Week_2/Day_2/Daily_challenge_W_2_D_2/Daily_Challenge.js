@@ -14,4 +14,6 @@ if (sentence.indexOf(wordNot) && sentence.indexOf(wordBad)) {
 
 if (sentence.indexOf(wordNot) && sentence.indexOf(wordBad)) {
 	console.log("The movie is good, I like it")
+} else if(false) {
+	console.log("The movie is not that bad, I like it")
 }
