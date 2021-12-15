@@ -18,9 +18,15 @@
 
 //   }
 
+
+function isDivisible() {
 for (let numN = 1; numN < 500; numN ++ ) {
-  let checkForThree = numN % 23;
-  if ( (checkForThree == 0) ) 
+  let divis = numN % 23;
+  if ( (divis == 0) ) {
   console.log(numN);
+  }
+  
 
 }
+}
+console.log(isDivisible());
