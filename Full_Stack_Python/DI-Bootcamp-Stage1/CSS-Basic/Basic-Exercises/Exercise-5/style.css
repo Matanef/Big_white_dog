@@ -1,0 +1,16 @@
+/*div > p {
+	background-color: yellow;
+	color: red;
+	font-size: 20px;
+	text-align: center;
+}*/
+
+/*ok so after i did this i noticed that the div has it's own class defined so the following is in consequence*/
+
+.container .text {
+	background-color: yellow;
+	color: red;
+	font-size: 20px;
+	text-align: center;
+}
+}
