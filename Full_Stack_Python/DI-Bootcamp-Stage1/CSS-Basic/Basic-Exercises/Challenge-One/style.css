@@ -3,10 +3,19 @@ body {
 }
 ul {
 	list-style-type: none;
+	text-align: center;
 }
 
 li::first-letter {
+	font-size: 22px;
+	font-weight: 50;
+	font-family: fantasy;
+}
+
+
+/*.capsent::first-letter {
 	font-size: 27px;
 	font-weight: bold;
 	font-family: fantasy;
-}
+
+}*/
