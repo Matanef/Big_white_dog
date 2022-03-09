@@ -1,10 +1,16 @@
 body {
 	background-color: rgb(226, 172, 127);
-}
-
-.capsent {
+	border-style: dotted;
 	text-align: center;
 }
+
+.div.wrap {
+	text-align: center;
+}
+
+/*.capsent {
+	text-align: center;
+}*/
 
 ul {
 	display: inline-block;
