@@ -2,9 +2,14 @@ body {
 	background: rgb(85, 204, 255);
 }
 
+.capsent {
+	text-align: center;
+}
+
 ul {
-	display: table;
+	display: inline-block;
 	list-style-type: none;
+	text-align: left;
 
 }
 
@@ -16,9 +21,5 @@ li::first-letter {
 
 /*li {
 	text-align: center;
-}*/
-
-/*.capsent::first-letter {
-
 }*/
 
