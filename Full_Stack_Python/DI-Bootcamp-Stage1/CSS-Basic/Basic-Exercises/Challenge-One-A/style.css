@@ -1,18 +1,17 @@
 body {
 	background-color: rgb(226, 172, 127);
+/*	border-style: dotted;*/
+text-align: center;
+}
+
+
+table, th, td {
 	border-style: dotted;
-	text-align: center;
 }
 
-.div.wrap {
-	text-align: center;
-}
-
-/*.capsent {
-	text-align: center;
-}*/
 
 ul {
+	/*border-style: dotted;*/
 	display: inline-block;
 	list-style-type: none;
 	text-align: left;
