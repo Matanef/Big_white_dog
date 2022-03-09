@@ -3,18 +3,23 @@ body {
 	text-align: center;
 }
 
-
-
-table, th, td {
-	text-align: center;
-	border-style: dotted;
-	margin-right: 20px;
-}
-
-table.center {
+table {
+	width: 50%;
 	margin-left:auto; 
 	margin-right:auto;
+	background-color: rgb(245, 245, 220);
 }
+
+th {
+	border: 5px dotted black;
+	text-align: center;
+
+}
+
+td {
+	border: 5px dotted black;
+}
+
 
 ul {
 	display: inline-block;
@@ -28,9 +33,3 @@ li::first-letter {
 	font-weight: 50;
 	font-family: fantasy;
 }
-
-/*i'm kinda stuck at this point since i have set the 
-div as table which helped me to order the position 
-of the lines and set a dotted border.
-thing is for some reason i have 2 dotted borders and i can't
-seem to be able to position the table in the middle of the page*/
