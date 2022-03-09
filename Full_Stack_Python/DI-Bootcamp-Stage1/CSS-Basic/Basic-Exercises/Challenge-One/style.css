@@ -1,0 +1,12 @@
+body {
+	background: rgb(85, 204, 255);
+}
+ul {
+	list-style-type: none;
+}
+
+li::first-letter {
+	font-size: 27px;
+	font-weight: bold;
+	font-family: fantasy;
+}
