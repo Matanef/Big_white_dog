@@ -1,0 +1,20 @@
+body {
+	background-color: rgb(226, 172, 127);
+}
+
+.capsent {
+	text-align: center;
+}
+
+ul {
+	display: inline-block;
+	list-style-type: none;
+	text-align: left;
+
+}
+
+li::first-letter {
+	font-size: 22px;
+	font-weight: 50;
+	font-family: fantasy;
+}
