@@ -4,28 +4,29 @@ body {
 
 .wrap {
   text-align: center;
-  align-items: center;
-  height: 75px
-  margin:  auto;
-  width: 60%;
-  padding: 50px;
+/*  align-items: center;*/
+height: 600px
+/*  margin:  auto;*/
+/*width: 60%;*/
+padding: 50px;
 }
 
 .nav {
   float: left;
   background-color: rgb(176, 207, 255);
-  padding-left: 10px;
-  height: 63%;
-  width: 15%;
-  margin-left: 30px;
+/*  padding-left: 10px;*/
+padding-right: ;
+/*height: 63%;*/
+/*width: 15%;*/
+margin-left: 30px;
 }
 
 .content {
   background-color: rgb(91, 127, 189);
-  margin-left: 155px;
-  padding: 20px;
-  height: 63%;
-  width: 655px;
+  margin-left: 165px;
+/*  padding: 20px;*/
+/*  height: 63%;
+  width: 655px;*/
 
 }
 .content > ul {
