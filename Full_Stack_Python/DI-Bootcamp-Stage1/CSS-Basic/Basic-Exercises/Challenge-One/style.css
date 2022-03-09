@@ -1,9 +1,11 @@
 body {
 	background: rgb(85, 204, 255);
 }
+
 ul {
+	display: table;
 	list-style-type: none;
-	text-align: center;
+
 }
 
 li::first-letter {
@@ -12,10 +14,11 @@ li::first-letter {
 	font-family: fantasy;
 }
 
+/*li {
+	text-align: center;
+}*/
 
 /*.capsent::first-letter {
-	font-size: 27px;
-	font-weight: bold;
-	font-family: fantasy;
 
 }*/
+
