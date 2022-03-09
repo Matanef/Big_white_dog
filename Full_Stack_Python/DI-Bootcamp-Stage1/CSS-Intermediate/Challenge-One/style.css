@@ -3,19 +3,29 @@ body {
 }
 
 .wrap {
-  float: center;
-  height: 150px;
-  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px
+  margin:  auto;
+  width: 60%;
+  padding: 24px;
 }
 
 .nav {
-  float: left;
-  background-color: rgb(176, 207, 255);
-  padding: 10px;
+ float: left;
+ background-color: rgb(176, 207, 255);
+ padding: 10px;
+ height: 376px;
+ display: ;
 }
 
 .content {
-  float: inherit;
   background-color: rgb(91, 127, 189);
   margin-left: 155px;
+  list-style-type: none;
+}
+
+.content.ul {
+  list-style-type: none;
 }
