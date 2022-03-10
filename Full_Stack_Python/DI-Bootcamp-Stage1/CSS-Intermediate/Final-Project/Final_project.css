@@ -34,13 +34,30 @@ span.a {
 	font-weight: 1200;
 }
 
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: left;
+}
+h1 {
+	color: sandybrown;
+	opacity: 0.8;
+	font-family: Blackadder ITC regular;
+	font-size: 47px;
+}
+
 .p1 {
-	font-family: Harlow Solid, Arial, serif;
-	font-size: 20px;
+	color: sandybrown;
+	opacity: 0.8;
+	font-family: Blackadder ITC regular, Harlow Solid, Arial;
+	font-size: 47px;
 }
 .p2 {
-	font-family: Brush Script MT, Helvetica, sans-serif;
-	display: flex
+	color: sandybrown;
+	opacity: 0.8;
+	font-family: Blackadder ITC regular, Harlow Solid, Arial;
+
 }	
 .p3 {
 	font-family: monospace;

@@ -1,0 +1,10 @@
+body {
+	background-image: url(12377912_10153817580073185_6342066330017462016_o.jpg);
+	background-repeat: repeat;
+	/*background-size: contain;*/
+	background-position: 0px -175px;
+}
+img {
+	height: 350px;
+	width: 520px;
+}
