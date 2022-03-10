@@ -3,28 +3,44 @@ body {
 }
 
 .wrap {
+  float: left;
+  margin-right: 0px;
   text-align: center;
 /*  align-items: center;*/
-height: 600px
+/*height: 600px*/
 /*  margin:  auto;*/
-/*width: 60%;*/
-padding: 50px;
+width: 87%;
+/*padding: 50px;*/
 }
 
 .nav {
   float: left;
   background-color: rgb(176, 207, 255);
 /*  padding-left: 10px;*/
-padding-right: ;
-/*height: 63%;*/
+
+height:400px;
 /*width: 15%;*/
 margin-left: 30px;
+margin-top: 21px;
 }
+
+.nav > li {
+  list-style-position: outside;
+  position: relative;
+  left: -10px;
+}
+
+/*ul li    {
+  padding:0;
+  width:150px;
+  background:red;
+  margin:10px 0;
+}*/
 
 .content {
   background-color: rgb(91, 127, 189);
   margin-left: 165px;
-/*  padding: 20px;*/
+/*  padding: 19px;*/
 /*  height: 63%;
   width: 655px;*/
 
@@ -32,8 +48,8 @@ margin-left: 30px;
 .content > ul {
   list-style-type: none;
 }
-.content > .copyright {
-  clear: right;
-  background-color: red;
-  text-align: center;
+
+.copyright {
+ margin-top: 120px;
+ text-align: center;
 }
