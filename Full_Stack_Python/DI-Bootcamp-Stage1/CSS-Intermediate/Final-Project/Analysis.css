@@ -1,0 +1,44 @@
+body {
+	margin-left: 14px;
+	background-image: url(lawrence-kayku-frWOcVisp8U-unsplash.jpg);
+	background-repeat: repeat;
+/*background-size: contain;*/
+background-position: 0px -175px;
+}
+
+.topnav {
+	background-image: url(Bar_il_1140xN.1433734475_h819.png);
+	overflow: hidden;
+	margin-top: 9px;
+}
+.topnav a {
+	float: left;
+	color: white;
+	background-color: grey;
+	opacity: 0.8;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	transition: all 1s;
+}
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+	transform: scale(1.1);
+	animation: ease;
+}
+
+.topnav a.active {
+	background-color: #151515;
+	color: white;
+}
+span.a {
+	font-family: Arial;
+	font-weight: 1200;
+}
+article {
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+}
