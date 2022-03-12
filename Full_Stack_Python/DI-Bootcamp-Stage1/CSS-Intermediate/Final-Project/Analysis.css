@@ -1,9 +1,12 @@
 body {
 	margin-left: 14px;
-	background-image: url(lawrence-kayku-frWOcVisp8U-unsplash.jpg);
-	background-repeat: repeat;
-/*background-size: contain;*/
-background-position: 0px -175px;
+	background-image: url(15086566-passage-à-travers-les-arches-magnifiques-jardins-multiples-et-des-murs-décorés-de-fleurs-roses-roses.webp);
+/*	background-size: auto;*/
+background-repeat: no-repeat;
+background-color: forestgreen;
+background-position: center;
+opacity: 1.8;
+/*background-position: 0px -175px;*/
 }
 
 .topnav {
@@ -37,8 +40,15 @@ span.a {
 	font-family: Arial;
 	font-weight: 1200;
 }
-article {
+section {
 	display: flex;
 	align-content: center;
 	flex-wrap: wrap;
+}
+article.blocktext {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 8em
 }
