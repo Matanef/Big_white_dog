@@ -1,13 +1,18 @@
 body {
-	
+
 /*	display: flex;*/
 margin-left: 14px;
-background-image: url(12377912_10153817580073185_6342066330017462016_o.jpg);
-background-repeat: repeat;
+background-image: url(fixed-open-old-blank-book-8534349.jpg);
+background-repeat: repeat-y;
 /*background-size: contain;*/
-background-position: 0px -175px;
-
+background-position: left;
+background-size: 920px 880px;
 }
+/*.background {
+	background-image: url(12377912_10153817580073185_6342066330017462016_o.jpg);
+	background-repeat: repeat;
+
+}*/
 .topnav {
 	background-image: url(Bar_il_1140xN.1433734475_h819.png);
 	overflow: hidden;
@@ -58,7 +63,7 @@ section {
 img {
 	align-content: flex-end;
 	margin: auto;
-	margin-top: 100px;
+	margin-top: 80px;
 	display: block;
 	transition: all 2s;
 	flex-direction: row;
@@ -71,11 +76,12 @@ img:hover {
 	transform: scale(1.120);
 	animation: ease;
 }
-div > ul {
+.content {
 	list-style-type: none;
 	background-color: lightgrey;
 	text-decoration-line: underline;
 	align-items: center;
+	border-style: solid;
 	text-align: left;
 	width: 250px;
 	padding-right: 45px;
@@ -83,6 +89,10 @@ div > ul {
 	align-items: left;
 	font-weight: 400;
 	opacity: 0.8;
+}
+ul {
+
+	list-style-type: none;
 }
 p { 
 /*	background-color: sandybrown;*/
