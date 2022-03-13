@@ -62,13 +62,13 @@ section {
 }
 
 img {
-	align-content: flex-end;
+/*	align-content: flex-end;
 	margin: auto;
 	margin-top: 80px;
-	display: block;
+	display: block;*/
 	transition: all 2s;
-	flex-direction: row;
-	justify-content: center;
+/*	flex-direction: row;
+	justify-content: right;*/
 	height: 350px;
 	width: 520px;
 }
@@ -92,7 +92,7 @@ div.content {
 	font-weight: 400;
 	opacity: 0.8;
 	position: sticky;
-	top: 0;
+	top: 32px;
 	background-color: yellow;
 	padding: 50px;
 	font-size: 20px;
@@ -101,6 +101,29 @@ ul {
 
 	list-style-type: none;
 }
+.catgory,
+.title,
+.footer {
+	margin-left: 72px;
+	position: sticky;
+	height: 50px;
+	font-size: 47px;
+}
+
+.category {
+	font-size: 87px;
+	font-family: fantasy;
+	color: lightgray;
+	top: 0;
+}
+.title {
+	font-size: 87px;
+	font-family: fantasy;
+	color: lightgray;
+	top: 0;
+}
+
+
 
 .container2{
 	display: flex;
@@ -108,25 +131,44 @@ ul {
 	align-content: flex-start;
 
 }
-p { 
+.page { 
 /*	background-color: sandybrown;*/
 /*background-blend-mode: screen;*/
-
 background-image: url(fixed-open-old-blank-book-8534349.jpg);
 background-size: cover;
 width: 330px;
 height: 330px;
-font-size: 23px;
+font-size: 28px;
 margin-left: 125px;
-padding-top: 12px;
-padding-bottom: 12px;
-padding-right: 6px;
-padding-left: 6px;
+padding-top: 120px;
+padding-bottom: 120px;
+padding-right: 78px;
+padding-left: 78px;
 }
 
-.container {
-	justify-content: center;
+
+
+
+div.container {
+	margin: auto;
+	margin-top: 80px;
+	display: flex;
+/*	align-content: flex-end;*/
+/*	transition: all 2s;*/
+flex-direction: row-reverse;
+/*	justify-content: space-around;*/
+/*	height: 350px;
+	width: 520px;*/
+	position: sticky;
+	top: 32px;
+	right: 64px;
+/*	justify-content: center;*/
 }
 
+.footer {
+	color: white;
+	bottom: 100px;
+	z-index: -1;
+}
 
 

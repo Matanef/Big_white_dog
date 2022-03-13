@@ -71,41 +71,44 @@ font-size: 45px;
 .art {
 	font-size: 67px;
 }
-/*h4 {
-/*	width: 450px;*/
-/*font-size: 87px;
-color: royalblue;
+h4 {
+	width: 450px;
+	color: royalblue;
 
-}*/
+}
 
 .stick ,
 .category,
 .title,
 .footer {
+	margin-left: 72px;
 	position: sticky;
 	height: 50px;
 }
 
-.stick {
-	position: sticky;
-	top: 0;
-}
+
 .category {
+	margin-left: 24px;
 	border-style: solid;
 	background-color: black;
-	font-size: 87px;
+	font-size: 47px;
 	color: royalblue;
 	position: sticky;
-	top: 0;
+	top: 12px;
 }
 
-.title.stick {
+.title {
+	margin-top: 112px;
 	border-style: solid;
 	background-color: sandybrown;
-	font-size: 87px;
+	font-size: 56px;
 	color: royalblue;
-	position: sticky;
-	top: 24px;
+
+}
+.stick {
+/*	margin-left: 72px;*/
+position: sticky;
+top: 52px;
 }
 
 
@@ -113,31 +116,3 @@ color: royalblue;
 	bottom: 100px;
 	z-index: -1;
 }
-
-
-/*.firststick {
-
-}
-
-.secondstick{
-
-}
-
-.thirdstick {
-
-}
-
-.forthstick {
-
-}
-
-.fifthstick{
-
-}
-
-.sixthstick{
-
-}
-.seventhstick{
-
-}*/
