@@ -63,14 +63,7 @@ font-size: 45px;
 /*	flex-wrap: wrap;*/
 }
 
-/*.charana{
-	;
 
-}	*/
-
-.spoiler {
-	font-size: 27px;
-}
 .blocktext {
 	margin-left: 220px;
 	font-size: 35px;
@@ -78,9 +71,66 @@ font-size: 45px;
 .art {
 	font-size: 67px;
 }
-h4 {
+/*h4 {
 /*	width: 450px;*/
-font-size: 87px;
+/*font-size: 87px;
 color: royalblue;
 
+}*/
+.category,
+.title,
+/*.footer {
+	position: sticky;
+	height: 50px;
+}*/
+
+.category {
+	border-style: solid;
+	background-color: black;
+	font-size: 87px;
+	color: royalblue;
+	position: sticky;
+	top: 0;
 }
+
+.title {
+	border-style: solid;
+	background-color: sandybrown;
+	font-size: 87px;
+	color: royalblue;
+	position: sticky;
+	top: 24px;
+}
+
+
+/*.footer {
+	bottom: 100px;
+	z-index: -1;
+}*/
+/*
+.firststick {
+
+}
+
+.secondstick{
+
+}
+
+.thirdstick {
+
+}
+
+.forthstick {
+
+}
+
+.fifthstick{
+
+}
+
+.sixthstick{
+
+}
+.seventhstick{
+
+}*/
