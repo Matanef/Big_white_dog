@@ -1,10 +1,13 @@
 body {
 	margin-left: 14px;
+/*	background-size: cover;
+	background-size: ;
 	background-image: url(15086566-passage-à-travers-les-arches-magnifiques-jardins-multiples-et-des-murs-décorés-de-fleurs-roses-roses.webp);
-/*	background-size: auto;*/
-background-repeat: no-repeat;
-background-color: forestgreen;
-background-position: center;
+	background-repeat: repeat-y;
+	/*background-attachment: fixed;*/
+	background-position: left;*/
+	background-color: forestgreen;
+/*	background-position: center;*/
 opacity: 1.8;
 /*background-position: 0px -175px;*/
 }
@@ -41,14 +44,38 @@ span.a {
 	font-weight: 1200;
 }
 section {
-	display: flex;
-	align-content: center;
-	flex-wrap: wrap;
+	font-size: 45px;
+	margin-left: 150px;
+	background-size: cover;
+/*	background-size: ;*/
+background-image: url(15086566-passage-à-travers-les-arches-magnifiques-jardins-multiples-et-des-murs-décorés-de-fleurs-roses-roses.webp);
+background-repeat: repeat-y;
+/*background-attachment: fixed;*/
+background-position: left;
+width: 1150px;
+/*	display: flex;*/
+font-size: 87px;
+/*	align-content: left;*/
+/*	flex-wrap: wrap;*/
 }
-article.blocktext {
-	display: flex;
-	align-items: center;
-	margin-left: auto;
-	margin-right: auto;
-	width: 8em
+
+/*.charana{
+	;
+
+}	*/
+
+.spoiler {
+	font-size: 27px;
+}
+.blocktext {
+	margin-left: 220px;
+	font-size: 35px;
+}
+.art {
+	font-size: 67px;
+}
+h4 {
+	width: 450px;
+	font-size: 87px;
+	color: darkslategrey;
 }
