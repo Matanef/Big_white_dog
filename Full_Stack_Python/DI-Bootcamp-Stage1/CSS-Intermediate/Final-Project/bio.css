@@ -77,7 +77,8 @@ img:hover {
 	transform: scale(1.120);
 	animation: ease;
 }
-.content {
+div.content {
+	display: flex;
 	list-style-type: none;
 	background-color: lightgrey;
 	text-decoration-line: underline;
@@ -90,6 +91,11 @@ img:hover {
 	align-items: left;
 	font-weight: 400;
 	opacity: 0.8;
+	position: sticky;
+	top: 0;
+	background-color: yellow;
+	padding: 50px;
+	font-size: 20px;
 }
 ul {
 
