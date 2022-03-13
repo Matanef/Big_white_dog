@@ -77,13 +77,19 @@ font-size: 45px;
 color: royalblue;
 
 }*/
+
+.stick ,
 .category,
 .title,
-/*.footer {
+.footer {
 	position: sticky;
 	height: 50px;
-}*/
+}
 
+.stick {
+	position: sticky;
+	top: 0;
+}
 .category {
 	border-style: solid;
 	background-color: black;
@@ -93,7 +99,7 @@ color: royalblue;
 	top: 0;
 }
 
-.title {
+.title.stick {
 	border-style: solid;
 	background-color: sandybrown;
 	font-size: 87px;
@@ -103,12 +109,13 @@ color: royalblue;
 }
 
 
-/*.footer {
+.footer {
 	bottom: 100px;
 	z-index: -1;
-}*/
-/*
-.firststick {
+}
+
+
+/*.firststick {
 
 }
 
