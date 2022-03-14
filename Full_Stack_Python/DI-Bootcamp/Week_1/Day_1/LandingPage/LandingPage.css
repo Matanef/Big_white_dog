@@ -61,6 +61,7 @@ span.a {
   background-color: rgb(251, 158, 174);
   font-weight: bold;
   height: 47px;
+  font-family: 'Recursive', sans-serif;
   width: 138px;
 }
 
@@ -68,7 +69,7 @@ span.a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 15%;
-  border-radius: 5px;
+  border-radius: 3px;
   text-align: center;
 }
 .card:hover {
