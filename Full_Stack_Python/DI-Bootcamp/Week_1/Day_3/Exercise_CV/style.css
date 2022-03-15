@@ -1,0 +1,29 @@
+article {
+	border: 2px solid yellowgree;
+	display: flex;
+	flex-direction: row;
+
+}
+.left_sec {
+	border: 2px solid red;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+/*	height: 590px;*/
+}
+.left_w {
+	display: flex;
+	border: 2px solid blueviolet;
+}
+.right_sec {
+	border: 2px solid red;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: center;
+/*	height: 590px;*/
+}
+footer {
+
+}
