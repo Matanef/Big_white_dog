@@ -1,8 +1,11 @@
-article {
-	border: 2px solid yellowgree;
+.fulla {
+	background-color: ;
+	border: 2px solid cyan;
 	display: flex;
 	flex-direction: row;
-
+	flex-wrap: wrap;
+	height: 1420px;
+	width: 1250px;
 }
 .left_sec {
 	border: 2px solid red;
@@ -10,20 +13,71 @@ article {
 	flex-direction: column;
 	justify-content: space-between;
 	align-content: center;
-/*	height: 590px;*/
+	width: 750px;
 }
 .left_w {
 	display: flex;
+	flex-direction: column;
 	border: 2px solid blueviolet;
+	height: 398px;
 }
 .right_sec {
-	border: 2px solid red;
+	background-color: rgb(10, 18, 43);
+	color: white;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-content: center;
-/*	height: 590px;*/
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+/*	align-content: center;*/
+width: 300px;
 }
-footer {
 
+.right_w {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	border: 2px solid silver;
+/*	width: 320px;
+	height: 480px;*/
+}
+.name {
+	height: 175px;
+}
+.pict {
+	background-color: rgb(43, 32, 10);
+	height: 175px;
+	width: 320px;
+}
+
+.contact {
+	width: 320px;
+	height: 640px;
+}
+.skills {
+	width: 320px;
+	height: 540px;
+}
+.education {
+
+}
+.experience {
+	background-color: rgb(243, 158, 41);
+}
+.time
+
+.time_inpar {
+/*	height: 398px;*/
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+border: 2px solid salmon;
+}
+
+footer {
+	background-color: black;
+	border-radius: 66px;
+	position: absolute ;
+	width: 1050px;
+	height: 35px;
+	bottom: 0;
 }
