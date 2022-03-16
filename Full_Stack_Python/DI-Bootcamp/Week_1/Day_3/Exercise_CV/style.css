@@ -4,8 +4,8 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	height: 1420px;
-	width: 1250px;
+	height: 1365px;
+	width: 1054px;
 }
 .left_sec {
 	border: 2px solid red;
@@ -13,13 +13,13 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-content: center;
-	width: 750px;
+	width: 720px;
 }
 .left_w {
 	display: flex;
 	flex-direction: column;
 	border: 2px solid blueviolet;
-	height: 398px;
+	height: 300px;
 }
 .right_sec {
 	background-color: rgb(10, 18, 43);
@@ -41,6 +41,9 @@ width: 300px;
 	height: 480px;*/
 }
 .name {
+	background-image: url(name2.jpg);
+	background-repeat: no-repeat;
+	background-position: 24px 25px;
 	height: 175px;
 }
 .pict {
@@ -51,17 +54,19 @@ width: 300px;
 
 .contact {
 	width: 320px;
-	height: 640px;
+	height: 620px;
 }
 .skills {
 	width: 320px;
-	height: 540px;
+	height: 500px;
 }
 .education {
-
+	background-image: url(SplitShire-0613.png);
+	background-size: cover;
 }
 .experience {
 	background-color: rgb(243, 158, 41);
+
 }
 .time
 
@@ -80,4 +85,8 @@ footer {
 	width: 1050px;
 	height: 35px;
 	bottom: 0;
+}
+div h5 {
+	font-family: 'Teko', sans-serif;
+	font-size: 26px;
 }
