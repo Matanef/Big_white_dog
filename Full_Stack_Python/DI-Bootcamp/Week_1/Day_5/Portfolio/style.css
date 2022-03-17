@@ -198,18 +198,31 @@ text-align: center;
 border-top: 2px solid rgb(200, 191, 231);
 }
 
-.introme {
- display:grid;
- grid-template-columns: 1fr 2fr 1fr;
- grid-template-rows: 100px 200px;
-}
 
+
+
+.wrapper {
+
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 1700px 200px;
+}
+.wrapper div{
+  border: 2px solid  pink;
+}
+.wrapper p {
+  border:  2px  solid lightgrey;
+}
 .hiintro {
   color: white;
-  font-family: Bankgothic;
-  font-size: 350px;
+/*  font-family: Bankgothic;*/
+font-size: 240px;
+font-family: Daniel;
+/*  position: fixed;*/
 }
+.someinfo {
 
+}
 
 main {
   min-height: 100px;
