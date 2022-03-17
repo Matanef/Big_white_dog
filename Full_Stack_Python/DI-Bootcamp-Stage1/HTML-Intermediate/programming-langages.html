@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mock Two</title>
+</head>
+<body>
+	<header>Inside of header - let's add a navbar with some essential links 
+		<nav>
+			<a href="video.html">Home</a>
+			<a href="matan.html">About</a>
+			<a href="Contact.html">Contact</a>
+		</nav>
+	</header>
+	<hr>
+	<h2>Here is the main section of our page - it consists of a new articles</h2>
+	<article>
+		<h2>Article 1 - 1995 was a pretty crazy year for programming languages!</h2>
+		<p>Don't believe me? Just check this table out:</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Language</th>
+					<th>Designed By</th>
+					<th>First Appeared</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>C++</td>
+					<td>Bjarne Stroustrup</td>
+					<td>1983</td>
+				</tr>
+				<tr>
+					<td>Python</td>
+					<td>Guido van Rossum</td>
+					<td>1991</td>
+				</tr>
+				<tr>
+					<td>Ruby</td>
+					<td>Yukihiro Matsumoto ("Matz")</td>
+					<td>1995</td>
+				</tr>
+				<tr>
+					<td>JavaScript</td>
+					<td>Branden Eich</td>
+					<td>1995</td>
+				</tr>
+				<tr>
+					<td>Java</td>
+					<td>James Gosling</td>
+					<td>1995</td>
+				</tr>
+				<tr>
+					<td>PHP</td>
+					<td>Rasmus Lardorf</td>
+					<td>1995</td>
+				</tr>
+			</tbody>
+		</table>
+	</article>
+	<article>
+		<h2>Article 2 - Coming soon...</h2>	
+	</article>
+	<h2>Contact us!</h2>
+	<form>
+		<h2>General Information</h2>
+		First Name: <input type="text" name="firstname"><br>
+		Last Name: <input type="text" name="lastname"><br>
+		Email: <input type="email" name="email" required><br>
+		Birthday: <input type="date" name="birthday"><br>
+
+		<!-- in the solution i saw that in this section we used plenty of <div> between each line, and we needed to use lables to define the wording/sentence near the field we need to fill.
+		my question, is this the appropriate way to do it or is this ok to do it with the example i wrote?
+		i guess i understand that this is a proper procedure since we might need to use this information later on and it would be easier to pull it this way  -->
+
+		<h2>Essential Questions</h2>
+		<p>What kind of work do you need?</p>
+		<div>
+			<label for:="programming">Programming:  </label>
+			<input type="checkbox" id="programming" name="programming"> <br>
+		</div>
+		<div>
+			<label for:="design">Design: </label>
+			<input type="checkbox" id="design" name="design"> <br>
+		</div>
+		<div>
+			<label for:="singing">Singing:  </label>
+			<input type="checkbox" id="singing" name="singing"> <br>
+		</div>
+		<div>
+			<label for:="comedy">Comedy:  </label>
+			<input type="checkbox" id="comedy" name="comedy"> <br>
+		</div>
+
+		<p>How interested are you in our design skills?</p>
+		<div>
+			<lable for:="very_low">Very Low</lable>
+			<input type="radio" id="very_low" name="interests" value="very_low">
+		</div>
+		<div>
+			<lable for:="low">Low</lable>
+			<input type="radio" id="low" name="interests" value="low">
+		</div>
+		<div>
+			<lable for:="medium">Medium</lable>
+			<input type="radio" id="medium" name="interests" value="medium">
+		</div>
+		<div>
+			<lable for:="high">High</lable>
+			<input type="radio" id="high" name="interests" value="high">
+		</div>
+		<div>
+			<lable for:="very_high">Very Hihg</lable>
+			<input type="radio" id="very_high" name="interests" value="very_high">
+		</div>
+		<input type="submit" value="Submit me!">
+		<!-- added a reset button for the infomation filled -->
+		<input type="reset">
+	</form>
+	<footer>
+		Here is our footer - let's make sure we copyright &copy this
+	</footer>
+
+		<!-- i searched the internet for the copyright symbol and i have seen other options to do it although oi was not able to implement it.
+		for example:  	&#169.
+
+		ohhhh ok i just got it, the &copy represent the &#169 in a visual way   -->
+		
+
+
+	</body>
+	</html>

@@ -113,6 +113,11 @@ top: 52px;
 
 
 .footer {
-	bottom: 100px;
-	z-index: -1;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: red;
+	color: white;
+	text-align: center;
 }

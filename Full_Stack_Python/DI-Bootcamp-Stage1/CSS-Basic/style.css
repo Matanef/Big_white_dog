@@ -1,0 +1,44 @@
+/*Selector {
+	Property:  value;
+}*/
+
+body {
+	background-image: url(simon-lee-36TSQemRAxo-unsplash.jpg);
+	background-size: cover;
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	background-color: lightskyblue;
+	color: deeppink;
+	cursor: pointer;
+	
+}
+
+h2 {
+	text-align: center;
+	background-color: lightblue;
+	border: 15px dotted darkred;
+}
+
+p {
+	color: pink;
+}
+
+p {
+	color: slategray;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: capitalize;
+	font-style: italic;
+}
+li {
+	list-style-type: square;
+
+}

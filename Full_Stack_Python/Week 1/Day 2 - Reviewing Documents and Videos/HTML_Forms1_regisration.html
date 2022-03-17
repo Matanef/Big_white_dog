@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+</head>
+<body>
+	<!-- use "GET" and not "POST" -->
+	<form method="GET">
+		First Name: <input type="text" name="firstname"><br>
+		Last Name: <input type="text" name="lastname"><br>
+		Email: <input type="email" name="email" required><br>
+		Password: <input type="password" name="password" minlength="5"><br>
+		Birthday: <input type="date" name="birthday"><br>
+		Gender:<br>
+		<input type="radio" name="gender" value="Male">Male<br>
+		<input type="radio" name="gender" value="Female">Female<br>
+		<input type="radio" name="gender"value="Other">Other<br>
+		Pets: <br>
+		<input type="checkbox" name="cat"> Cat<br>
+		<input type="checkbox" name="dog"> Dog<br>
+		<input type="checkbox" name="fish"> Fishe<br>
+		<input type="checkbox" name="pussom"> Possum<br>
+		<input type="checkbox" name="rhino"> Rhino<br>
+		Cars: <br>
+		<select name="cars">
+			<option value="volvo">Volvo</option><br>
+			<option value="audi">Audi</option><br>
+			<option value="BMW">BMW</option><br>
+		</select><br>
+
+		<input type="submit" value="Register!">
+		<input type="reset">
+
+	</form>
+
+	<video src="20220307_151844.mp4" height="480" width="640" autoplay></video>
+</body>
+</html>
+
+<!-- ?
+firstname=fakeFirst
+&lastname=fakeLast
+&email=fakeemail%40gmail.com
+&password=matan210
+&birthday=1984-08-24
+&gender=on
+&cat=on
+&fish=on
+&pussom=on
+
+
+?
+firstname=fakeFirst
+&lastname=fakeLast
+&email=fakeemail%40gmail.com
+&password=matan210
+&birthday=1984-08-24
+&gender=Male
+&dog=on
+&pussom=on
+&rhino=on
+&cars=audi -->
