@@ -1,0 +1,39 @@
+*. {
+	box-sizing: border-box;
+}
+section{
+	border: 5px solid black;
+	display: grid;
+	grid-template-rows: 200pc 200px;
+	grid-template-columns: repeat(1fr, 2fr, 1fr, 2fr);
+	grid-template-columns: 2fr repeat(2, 1fr);
+}
+
+
+div{
+	text-align: center;
+	color: black;
+	font-size: 30px;
+	width: 150px;
+}
+
+.greenbox{
+	background-color: lightseagreen;
+	grid-row: 1, span 2;
+}
+.purplebox {
+	background-color: purple;
+	grid-column: 2 / span 2;
+}
+.pinkbox {
+	background-color: pink;
+}
+.bluebox {
+	background-color: blueviolet;
+}
+.yellowbox {
+	background-color: yellow;
+}
+.redbox {
+	background-color: red;
+}

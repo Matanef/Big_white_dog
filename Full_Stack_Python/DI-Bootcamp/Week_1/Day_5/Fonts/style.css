@@ -1,0 +1,14 @@
+.wrap_em {
+	font-size: 30px;
+	border: 2px solid green;
+}
+
+.child {
+	font-size: 1.5em;
+	color: red;
+}
+
+.students {
+	font-size: 2.5em;
+	color: blue;
+}

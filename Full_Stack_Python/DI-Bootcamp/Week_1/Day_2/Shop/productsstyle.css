@@ -1,3 +1,7 @@
+body {
+
+	background-color: rosybrown;
+}
 .topnav {
 	background-color: sienna;
 	overflow: hidden;
@@ -20,11 +24,9 @@
 }
 
 .topnav a.active {
-	float: right;
 	background-color: sienna;
 	color: black;
 }
-
 span.a {
 	font-family: Arial;
 	font-weight: 1200;
@@ -52,9 +54,9 @@ a img {
 .allcards {
 	margin-top: 47px;
 	margin-bottom: 24px;
-	display: inline-block;
-/*	flex-wrap: wrap;*/
-justify-content:space-evenly	;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-evenly	;
 
 }
 .container {
@@ -67,8 +69,6 @@ justify-content:space-evenly	;
 
 i {
 	text-align: center;
-	margin-left: 57px;
-	margin-top: 57px;
 }
 footer {
 	float: right;
@@ -76,10 +76,6 @@ footer {
 .fa-500px{
 	float: right;
 	margin-right: 7px;
-}
-.fa-desktop {
-/*	display: flex;*/
-
 }
 .price {
 	color: grey;
