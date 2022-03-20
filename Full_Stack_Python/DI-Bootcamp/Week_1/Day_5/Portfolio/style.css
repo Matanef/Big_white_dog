@@ -200,29 +200,32 @@ border-top: 2px solid rgb(200, 191, 231);
 
 
 
-
-.wrapper {
-
+/*gri to be abel to move the Hi div*/
+.gridintro {
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
-  grid-template-rows: 1700px 200px;
+  grid-template-columns: 3.5fr 2fr 6.5fr;
+  grid-template-rows: 1fr 2fr 5fr;
 }
-.wrapper div{
+/*.gridintro div{
   border: 2px solid  pink;
 }
-.wrapper p {
+.gridintro p {
   border:  2px  solid lightgrey;
-}
+}*/
+
+
 .hiintro {
   color: white;
 /*  font-family: Bankgothic;*/
-font-size: 240px;
+font-size: 100px;
 font-family: Daniel;
-/*  position: fixed;*/
+position: inherit;
 }
 .someinfo {
 
 }
+
+
 
 main {
   min-height: 100px;
