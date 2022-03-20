@@ -27,6 +27,14 @@ console.log(myWatchedSeries);
 myWatchedSeries.splice(1, 1);
 console.log(myWatchedSeries);
 
+let moneyLetter = myWatchedSeries[1].toString();
+console.log(moneyLetter);
+
+let moneyLetterLength = moneyLetter.length;
+console.log(`moneyLetterLength=` ,moneyLetterLength);
+
+console.log(moneyLetter.substring(2,3));
+
 console.log(myWatchedSeries);
 
 
