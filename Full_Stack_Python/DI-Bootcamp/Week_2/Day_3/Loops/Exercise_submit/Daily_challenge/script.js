@@ -1,19 +1,19 @@
-let astrixlength = 6;
+let astlength = 6;
 //we have 6 lines that needs to be crated, hence we will already define
 //the row length/
-let astrix = '';
+let ast = '';
 // no spaces
-for (let i = 1; i<=astrixlength; i++){
-	astrix +="*";
-	console.log(astrix);
+for (let i = 1; i<=astlength; i++){
+	ast +="*";
+	console.log(ast);
 }
 
-let astrixLength = 6;
-let astrixs='rrrr';
-for (let i = 1; i <= astrixlength; i++){
+let astsLength = 6;
+let asts='';
+for (let i = 1; i <= astsLength; i++){
 	for (let j = 1; j <= i; j++){
-		astrixs +="*";
+		asts +="*";
 	}
-	console.log(astrixs);
-	astrixs = '';
+	console.log(asts);
+	asts = '';
 }
