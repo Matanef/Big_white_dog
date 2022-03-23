@@ -12,10 +12,10 @@ let res = brk.join(" ")
 console.log(res);
 
 let longestWord = 0
-for (let l = 0; l <brk.length; l++){
+for (let l = 0; l <wordStr.length ; l++){
     for (let nest =0; nest <=l; nest++ )
         if(nest.length > longestWord){
-            longestWord = brk[l].length;
+            longestWord = brk.length;
             console.log(wordListArr[l] + "*");
         }
     }
