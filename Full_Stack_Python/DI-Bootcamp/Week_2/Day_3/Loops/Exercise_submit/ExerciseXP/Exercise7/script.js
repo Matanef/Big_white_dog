@@ -9,3 +9,17 @@ for (var i =0; i < names.length; i++){
 }
 
 console.log(arr.sort().join(``));
+
+
+console.log("-------------------------")
+
+let societyName = "";
+names = names.sort();
+console.log(names);
+
+for (let person of names){
+	console.log(`The first letter of the name ${person} is ${person.charAt(0)} `)
+
+	societyName += person.charAt(0);
+}
+console.log(`The Society Name is ${societyName}`);
