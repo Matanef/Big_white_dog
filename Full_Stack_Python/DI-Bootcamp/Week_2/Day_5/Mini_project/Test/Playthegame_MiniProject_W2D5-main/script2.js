@@ -16,14 +16,30 @@ function playTheGame(){
     console.log(typeof(userNumber));
     let computerNumber = Math.floor(Math.random() * 10) + 1;
     console.log(computerNumber);
-    return userNumber, computerNumber
+    return userNumber
+    return computerNumber
 }
+
+// let x = userNumber;
+// let y = computerNumber;
+// console.log(x);
+// console.log(y);
+
+
+
+
 function test(userNumber,computerNumber){
-    if (userNumber > computerNumber) {
-        prompt("Your number is bigger then the computer’s, guess again")
+    let x = userNumber
+    let y = computerNumber;
+    let newNumber;
+    if (x > y) {
+        let newNumber = prompt("Your number is bigger then the computer’s, guess again")
+    } else if (x < y){
+        let newNumber = prompt("Your number is smaller then the computer’s, guess again")
+    }else if (x==y){
+        alert("Winner");
+
     }
-
-
-    return
 }
-test();
+
+// test();
