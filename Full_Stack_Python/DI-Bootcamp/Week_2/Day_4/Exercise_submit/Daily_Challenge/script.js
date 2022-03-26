@@ -1,67 +1,24 @@
-let wordListArr = []
+let text = prompt("please enter a sentence")
+let text_arr = text.split(" ");
+console.log(text_arr);
 
-for (let i = 1; i <= 4; i++){
-    wordListArr.push(prompt(`Please enter the ${i}# word`))
+let longest = get_longest(text_arr);
+let border = new Array(longest + 8).join("*")
+
+
+console.log(border)
+for (word of text_arr){
+	console.log("* " + word + new Array(longest - word.length +4).join(" ") + " *");
 }
-console.log(wordListArr)
-let wordStr =  wordListArr.join(", ");
-console.log(wordStr); 
-let brk = wordStr.split(` `);
-let res = brk.join(" ")
-console.log(res);
+console.log(border)
 
-// let max = parseInt(Math.max(wordStr));
-// console.log(max) 
+function get_longest(arr){
+	let longest = 0;
 
-// function longWord(){
-//     let longestWord = 0
-//     for (let l = 0; l <brk.length; l++){
-//         let currentWord = brk[l];
-//         let longWord = currentWord.length;
-//         if(longWord > currentWord){
-//             let longestWord = longWord;
-//             // console.log("*" +brk[l]+ "*");
-//             console.log(longestWord)
-//         }
-//     }
-//     return longestWord
-// }
-
-
-// function longWord(){
-    function massiveWord(wordListArr) {
-        let longestWord = 0
-        for (let l = 0; l <brk.length; l++){
-            if(brk.length > longestWord){
-                longestWord = brk.length;
-                // console.log(longestWord);
-            }
-        }
-        return longestWord
-    }
-    massiveWord();
-
-
-
-    function frameWords (wordListArr){
-        let longestWord = massiveWord(wordListArr)
-        let sign = "*";
-
-        let frame = sign.repeat(longestWord + 4)
-        console.log(`${frame}`)
-        for (let j = 0; j < wordListArr; j++){
-            let empty = " ";
-            let currWord = wordListArr[j]
-            let space = longestWord - currWord.length;
-            console.log(`* ${currWord} ${empty.repeat(space)}*`);
-        }
-    }
-
-    frameWords();
-
-// longWord(longestWord);
-
-
-// function frameWord (){
-//     let longestWord = 
-// }
+	for (word of arr){
+		if (word.length > longest){
+			longest = word.length
+		}
+	}
+	return longest;
+}
