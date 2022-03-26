@@ -1,14 +1,14 @@
-// function hotelCost() {
-// 	let night;
-// 	do {
-// 		night = prompt(`how many nights?`)
-// 		console.log(night);
-// 	}
-// 	while (isNaN(night)||night=='')
-// 		return night*140
-// }
-// let total = hotelCost();
-// console.log(total);
+function hotelCost() {
+	let night;
+	do {
+		night = prompt(`how many nights?`)
+		console.log(night);
+	}
+	while (isNaN(night)||night=='')
+		return night*140
+}
+let total = hotelCost();
+console.log(total);
 
 
 function planeRideCost(){
@@ -24,3 +24,10 @@ function planeRideCost(){
 planeRideCost()
 // let a = planeRideCost();
 // console.log(a);
+
+
+function totalVacatioCost(){
+	let costHotel = hotelCost();
+	// console.log(`The hotel costs ${??}`); 
+	console.log(`The hotel costs ${costHotel}`)
+}
