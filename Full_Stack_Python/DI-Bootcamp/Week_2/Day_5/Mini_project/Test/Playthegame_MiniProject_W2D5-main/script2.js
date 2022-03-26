@@ -12,13 +12,21 @@ function playTheGame(){
     } else if (userNumber<0 || userNumber>10) {
         alert(`Numbers needs to be between 0 and 10, the number you selected is ${userNumber}`)
     }
-    console.log(userNumber);
-    console.log(typeof(userNumber));
+    // console.log(userNumber);
+    // console.log(typeof(userNumber));
     let computerNumber = Math.floor(Math.random() * 10) + 1;
-    console.log(computerNumber);
-    return userNumber
-    return computerNumber
+    // console.log(computerNumber);
+    return [userNumber, computerNumber];
 }
+
+
+// const numberTest = playTheGame();
+// console.log(numberTest);
+
+let numbers = playTheGame();
+console.log(userNumber);
+console.log(computerNumber);
+console.log(typeof(userNumber));
 
 // let x = userNumber;
 // let y = computerNumber;
@@ -29,17 +37,12 @@ function playTheGame(){
 
 
 function test(userNumber,computerNumber){
-    let x = userNumber
-    let y = computerNumber;
-    let newNumber;
-    if (x > y) {
-        let newNumber = prompt("Your number is bigger then the computer’s, guess again")
-    } else if (x < y){
+    if (numbers[0] > numbers[1]) {
+        let newNumber = ("Your number is bigger then the computer’s, guess again")
+    } else if (numbers[0] < numbers[1]){
         let newNumber = prompt("Your number is smaller then the computer’s, guess again")
-    }else if (x==y){
+    }else if (numbers[0] == numbers[1]){
         alert("Winner");
-
     }
 }
-
-// test();
+test(numbers[0],numbers[1])
