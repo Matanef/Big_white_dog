@@ -24,9 +24,9 @@ function playTheGame(){
 // console.log(numberTest);
 
 let numbers = playTheGame();
-console.log(userNumber);
-console.log(computerNumber);
-console.log(typeof(userNumber));
+console.log(numbers[0]);
+console.log(numbers[1]);
+console.log(typeof(numbers[0]));
 
 // let x = userNumber;
 // let y = computerNumber;
