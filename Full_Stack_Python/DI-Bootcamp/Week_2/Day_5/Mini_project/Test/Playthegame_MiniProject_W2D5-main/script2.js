@@ -22,11 +22,12 @@ function playTheGame(){
 
 // const numberTest = playTheGame();
 // console.log(numberTest);
-
 let numbers = playTheGame();
-console.log(numbers[0]);
-console.log(numbers[1]);
-console.log(typeof(numbers[0]));
+test(numbers[0],numbers[1]);
+
+// console.log(numbers[0]);
+// console.log(numbers[1]);
+// console.log(typeof(numbers[0]));
 
 // let x = userNumber;
 // let y = computerNumber;
@@ -37,6 +38,13 @@ console.log(typeof(numbers[0]));
 
 
 function test(userNumber,computerNumber){
+    let numbers = playTheGame();
+    console.log(numbers[0]);
+    console.log(numbers[1]);
+    console.log(typeof(numbers[0]));
+    for (let i =0; i < 3 || numbers[0] == numbers[1] ; i++){
+        newNumber = parseInt(prompt("Enter a number between 0-10"))
+    }
     if (numbers[0] > numbers[1]) {
         let newNumber = ("Your number is bigger then the computer’s, guess again")
     } else if (numbers[0] < numbers[1]){
@@ -45,4 +53,3 @@ function test(userNumber,computerNumber){
         alert("Winner");
     }
 }
-test(numbers[0],numbers[1])
