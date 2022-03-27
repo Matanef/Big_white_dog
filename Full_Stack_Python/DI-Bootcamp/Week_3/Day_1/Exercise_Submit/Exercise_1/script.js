@@ -24,11 +24,15 @@ ulElement.appendChild(newLi1);
 
 let firstElementInList = ulElement.firstElementChild
 console.log(firstElementInList)
+let text1 = firstElementInList.textContent;
+console.log(text1);
 
 
 
 let lastElementInList = ulElement.lastElementChild
 console.log(lastElementInList);
+let text2 = lastElementInList.textContent;
+console.log(text2);
 
 
 
