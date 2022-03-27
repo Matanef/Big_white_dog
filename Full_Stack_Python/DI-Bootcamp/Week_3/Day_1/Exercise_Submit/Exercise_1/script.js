@@ -14,7 +14,6 @@ let textNode = document.createTextNode("something something dark side");
 newLi.appendChild(textNode)
 ulElement.appendChild(newLi);
 
-let ulElement = divElement.lastElementChild
 console.log(ulElement)
 
 let newLi1 = document.createElement("li");
@@ -23,6 +22,13 @@ let textNode1 = document.createTextNode("Logout");
 newLi1.appendChild(textNode1)
 ulElement.appendChild(newLi1);
 
+let firstElementInList = ulElement.firstElementChild
+console.log(firstElementInList)
+
+
+
+let lastElementInList = ulElement.lastElementChild
+console.log(lastElementInList);
 
 
 
