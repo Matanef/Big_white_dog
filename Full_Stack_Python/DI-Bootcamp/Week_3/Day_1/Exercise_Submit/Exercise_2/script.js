@@ -30,12 +30,13 @@ console.log(liPeteFirstWay)
 liElement.innerHTML = "Richard";
 
 
-let liElementFirstItem = document.getElementsByClassName("first");
-console.log(liElementFirstItem);
+// let liElementFirstItem = document.getElementsByClassName("first");
+// console.log(liElementFirstItem);
 
-liElementFirstItem.outerHTML = "Matan";
+// liElementFirstItem.outerHTML = "Matan";
 
-
+let liNameChange = document.getElementsByClassName("list").firstElementChild;
+console.log(liNameChange)
 
 // let firstLi = ulElementByTag.children[0];
 // console.log(firstLi)
