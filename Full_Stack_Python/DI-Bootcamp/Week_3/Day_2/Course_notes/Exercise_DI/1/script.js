@@ -11,9 +11,9 @@ function insertRow (){
 	let rowNum = document.getElementsByTagName("tr").length
 	// let cellNum = 
 
-	for (let i =0; i<trElement.length; i++){
+	for (let i =0; i<4; i++){
 		let tdElement = document.createElement("td");
-		let tdText = document.createTextNode(`Row ${rowNum} cell1`);
+		let tdText = document.createTextNode(`Row cell1`);
 		tdElement.appendChild(tdText);
 		trElement.appendChild(tdElement);
 	}
