@@ -1,10 +1,10 @@
 // let tableElement = document.getElementById("sampleTable");
 // console.log(tableElement);
 
-// let trElement = document.getElementsByTagName('tr')
-// console.log(trElement);
-// let tdElement = document.getElementsByTagName('td')
-// console.log(tdElement);
+let trElement = document.getElementsByTagName('tr')
+console.log(trElement);
+let tdElement = document.getElementsByTagName('td')
+console.log(tdElement);
 
 function insertRow (){
 	let trElement = document.createElement('tr');
@@ -13,11 +13,11 @@ function insertRow (){
 
 	for (let i =0; i<trElement.length; i++){
 		let tdElement = document.createElement("td");
-		let tdText = document.createTextNode(`Row ${tdElement.length} cell1`);
+		let tdText = document.createTextNode(`Row ${rowNum} cell1`);
 		tdElement.appendChild(tdText);
 		trElement.appendChild(tdElement);
 	}
-	let tableElement = document.getElementById("sampleTable");
+	let tableElement = document.querySelector("table");
 	tableElement.appendChild(trElement)
 	console.log(tableElement);
 
