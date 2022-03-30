@@ -19,5 +19,12 @@ for (let planet of solarArray){
     planetDivs.style.backgroundColor = planet.color
     planetSection.appendChild(planetDivs);
     console.log(planetDivs);
+    for (let moon of solarArray){
+        let moonDivs  = document.createElement('div');
+        moonDivs.classList.add('moon');
+        moonDivs.innerText = planet.moons;
+        moonDivs.style.backgroundColor = planet.color
+        planetDivs.appendChild(moonDivs);
+    }
 }
 
