@@ -1,4 +1,4 @@
-// let tableElement = document.getElementById("sampleTable");
+let tableElement = document.getElementById("sampleTable");
 // console.log(tableElement);
 
 let trElement = document.getElementsByTagName('tr')
@@ -8,16 +8,18 @@ console.log(tdElement);
 
 function insertRow (){
 	let trElement = document.createElement('tr');
-	let rowNum = document.getElementsByTagName("tr").length
-	// let cellNum = 
+	let rowNum = document.getElementsByTagName("tr").length +1
+	// let cellNum = document.getElementsByTagName("tr").length +1
 
-	for (let i =0; i<4; i++){
+	for (let i =0; i<2; i++){
 		let tdElement = document.createElement("td");
-		let tdText = document.createTextNode(`Row cell1`);
+		let cellNum = i +1
+		let tdText = document.createTextNode(`Row${rowNum} cell${cellNum}`);
 		tdElement.appendChild(tdText);
 		trElement.appendChild(tdElement);
 	}
-	let tableElement = document.querySelector("table");
+	// let tableElement = document.querySelector("table");
+	let tableElement = document.getElementById("sampleTable");
 	tableElement.appendChild(trElement)
 	console.log(tableElement);
 
