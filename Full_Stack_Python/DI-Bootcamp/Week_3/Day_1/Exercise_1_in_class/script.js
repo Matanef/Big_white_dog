@@ -10,12 +10,12 @@ console.log(divElementSecond)
 let ulElement = documentElement.children[1];
 console.log(ulElement)
 let ulElementSecond = documentElement.nextElementSibiling;
-console.log(ulElementSecond)
+console.log()
 
 let liElement = document.body.children[1]
-console.log(liElement)
+console.log()
 let liElementSecond = ulElement[0];
-console.log(liElementSecond)
+console.log()
 
 
 const lieElementSecond = document.getElementsByTagName('li');
@@ -24,17 +24,17 @@ for (i = 0; i < liElementSecond.length; i++) {
 	liElementSecond[i].style.border = '1px solid blue';
 }
 
-// let divElementFirstWay = document.body.children[0];
-// console.log(divElementFirstWay)
-// let divElementSecondWay =  document.body.firstElementChild;
-// console.log(divElementSecondWay)
+let divElementFirstWay = document.body.children[0];
+console.log(divElementFirstWay)
+let divElementSecondWay =  document.body.firstElementChild;
+console.log(divElementSecondWay)
 
-// let ulElementFirstWay = document.body.children[1];
-// console.log(ulElementFirstWay)
-// let ulElementSecondWay = divElementFirstWay.nextElementSibling;
-// console.log(ulElementSecondWay)
+let ulElementFirstWay = document.body.children[1];
+console.log(ulElementFirstWay)
+let ulElementSecondWay = divElementFirstWay.nextElementSibling;
+console.log(ulElementSecondWay)
 
-// let liPeteFirstWay = ulElementFirstWay.lastElementChild;
-// console.log(liPeteFirstWay)
-// let liPeteSecondWay = ulElementFirstWay.children[1];
-// console.log(liPeteSecondWay)
+let liPeteFirstWay = ulElementFirstWay.lastElementChild;
+console.log(liPeteFirstWay)
+let liPeteSecondWay = ulElementFirstWay.children[1];
+console.log(liPeteSecondWay)

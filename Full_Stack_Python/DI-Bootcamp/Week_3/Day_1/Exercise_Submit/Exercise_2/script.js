@@ -8,67 +8,68 @@ console.log(ulElementFirst)
 let ulElementSecond = document.body.children[2];
 console.log(ulElementSecond)
 
-// let ulElementAll = ulElementFirst || ulElementSecond
-// console.log(ulElementAll)
+let ulLiRichard = ulElementFirst.children[1]
+console.log(ulLiRichard)
+
+ulLiRichard.textContent = "Richard"
 
 
-// let ulElementByTag = document.getElementsByTagName(`ul`).firstElementChild
-// console.log(ulElementByTag)
 
-let liElement = ulElementFirst.lastElementChild
-console.log(liElement);
+// This is one way to do it although here i did repeat my self
 
-let liElementFirst = ulElementFirst.firstElementChild
-console.log(liElementFirst);
+let allLis = document.querySelectorAll("ul li");
+console.log(allLis);
 
-
-let liPeteFirstWay = ulElementFirst.firstElementChild;
-console.log(liPeteFirstWay)
-
-// for (let i = 0; i=1)
-
-liElement.innerHTML = "Richard";
+console.log(allLis[0])
 
 
-// let liElementFirstItem = document.getElementsByClassName("first");
-// console.log(liElementFirstItem);
-
-// liElementFirstItem.outerHTML = "Matan";
-
-let liNameChange = document.getElementsByClassName("list").firstElementChild;
-console.log(liNameChange)
-
-// let firstLi = ulElementByTag.children[0];
-// console.log(firstLi)
+allLis[0].textContent = "Matan"
+allLis[2].textContent = "Matan"
 
 
 
 
+// let ulElementQuery = document.querySelectorAll("ul > li");
+// console.log(ulElementQuery);
 
-// let containerQuerySelector = document.querySelector("#first")
-// console.log(containerQuerySelector)
+// let firstLis = 
+
+// ulElementQuery[3].innerHTML = "dfsgdsfgdsfg"
 
 
-// containerQuerySelector.innerHTML = "Matan"
 
-
-// for (i = 0; i <=1; i++) {
-// 	liElementSecond[i].style.border = '1px solid pink';
-// }
-// ulElementByTag.innerHTML = `Matan`;
-
+// let liElementList1 = ulElementQuery[0];
+// console.log(liElementList1)
 
 
 
 
+// let liElementList1 = ulElementFirst.firstElementChild;
+// console.log(liElementList1)
 
-// let ulElementByTag = document.getElementsByTagName(`ul`);
-// let liElementSecond = ulElementByTag.firstElementChild;
-// for (let i = 0; i <=1; i++) {
-// 	for(let j=0; j<1; j++){
-// 		ulElementByTag[i].style.border = '1px solid blue';
-// 		liElementSecond[j].innerHTML = "Matan"
-// 		console.log(liElementSecond )
-// 	}
-// }
+
+// let liElementList2 = ulElementSecond.firstElementChild;
+// console.log(liElementList2)
+
+
+let newEndLiOne = document.createElement("li");
+let newEndLiOneText = document.createTextNode("Hello Students");
+
+newEndLiOne.appendChild(newEndLiOneText);
+ulElementFirst.appendChild(newEndLiOne);
+
+let newEndLiTwo = document.createElement("li");
+let newEndLiTwoText = document.createTextNode("Hello Students");
+
+newEndLiTwo.appendChild(newEndLiTwoText);
+ulElementSecond.appendChild(newEndLiTwo);
+
+
+//----------------------------------------------------------------
+
+let sarahLi = allLis[3]
+console.log(sarahLi);
+
+sarahLi.remove();
+
 

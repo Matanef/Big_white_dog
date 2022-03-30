@@ -1,0 +1,33 @@
+#btn {
+	background-color: lightgreen;
+}
+
+
+#title {
+	background-color:  lightblue;
+}
+
+div p {
+	color: blue;
+}
+
+
+button {
+	font-size: 25px;
+	width: 150px;
+	height: 150px;
+	color:  white;
+	border: 2px solid white;
+}
+
+#btn-red-one, #btn-red-two{
+	background-color:  red;
+}
+
+#btn-blue-one, #btn-blue-two {
+	background-color:  blue;
+}
+
+#btn-yellow-two {
+	background-color:  yellow;
+}
