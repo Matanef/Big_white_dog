@@ -87,3 +87,10 @@ ulElementSecond.classList.replace("list", "student_list");
 ulElementFirst.classList.add("university", "attendance")
 
 
+
+
+let list_ul = document.getElementsByTagName('ul')
+for (let list of list_ul){
+	console.log(list.firstElementChild)
+	
+}

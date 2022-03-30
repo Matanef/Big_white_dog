@@ -1,29 +1,23 @@
-let solarSystem = [
-{name: 'Mercury', moon: 0, color:"orange"},
-{name: 'Venus', moon: 0, color:"grey"},
-{name: 'Earth', moon: 1, color:"blue"},
-{name: 'Mars', moon: 2, color: 'red'},
-{name: 'Jupiter', moon: 79, color: 'brown'},
-{name: 'Saturan', moon: 82, color: 'yellow'},
-{name: 'Uranus',moon: 27, color:'lightblue'},
-{name: 'Neptune', moon: 14, color:'darkblue'}
+let solarArray = [
+{name: 'Mercury', moons: 0, color: "lightgrey"},
+{name: 'Venus', moons: 0, color: "lightgrey"},
+{name: 'Earth', moons: 1, color: "blue"},
+{name: 'Mars', moons: 2, color: "#c94c4c"},
+{name: 'Jupiter', moons: 79, color: "#bc5a45"},
+{name: 'Saturn', moons: 82, color: "#dac292"},
+{name: 'Uranus', moons: 27, color: "lightblue"},
+{name: 'Neptun', moons: 14, color: "darkblue"},
+{name: 'Pluto', moons: 5, color: "lightgrey"}
 ]
 
-let main = document.getElementById('listPlanets');
-for (var i = 0; i < solarSystem.length; i++) {
-  let planet = document.createElement('div');
-  planet.classList.add('planet');
-  planet.innerText = solarSystem[i].name;
-  planet.style.backgroundColor = solarSystem[i].color;
-  main.appendChild(planet)
+let planetSection = document.querySelector('section');
+console.log(planetSection);
+for (let planet of solarArray){
+    let planetDivs = document.createElement('div')
+    planetDivs.classList.add('planet');
+    planetDivs.innerText = planet.name;
+    planetDivs.style.backgroundColor = planet.color
+    planetSection.appendChild(planetDivs);
+    console.log(planetDivs);
+}
 
-  let moons = solarSystem[i].moon;
-  let left = 0;
-  for (let j = 0; j < moons; j++) {
-    let moon = document.createElement('div');
-    moon.classList.add('moon');
-    moon.style.left = left + 'px';
-    left +=15;
-    planet.appendChild(moon);
-}
-}
