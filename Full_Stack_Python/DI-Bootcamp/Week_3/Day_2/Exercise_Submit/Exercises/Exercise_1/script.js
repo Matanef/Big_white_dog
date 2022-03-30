@@ -20,7 +20,7 @@ console.log(parasElements[0])
 
 for (let i = 0; i <= parasElements.length; i++){
 	if (i == parasElements.length)
-		let lastpar = 
-		console.log(i)
+		// let lastpar = 
+	console.log(i)
 }
 console.log(parasElements.length)
