@@ -14,6 +14,10 @@ console.log(ulLiRichard)
 ulLiRichard.textContent = "Richard"
 
 
+//----------------------------------------------------------------
+
+let allUls = document.querySelectorAll("ul");
+console.log(allUls)
 
 // This is one way to do it although here i did repeat my self
 
@@ -26,7 +30,7 @@ console.log(allLis[0])
 allLis[0].textContent = "Matan"
 allLis[2].textContent = "Matan"
 
-
+//----------------------------------------------------------------
 
 
 // let ulElementQuery = document.querySelectorAll("ul > li");
@@ -71,5 +75,15 @@ let sarahLi = allLis[3]
 console.log(sarahLi);
 
 sarahLi.remove();
+
+
+//----------------------------------------------------------------
+
+
+ulElementFirst.classList.replace("list", "student_list");
+ulElementSecond.classList.replace("list", "student_list");
+
+
+ulElementFirst.classList.add("university", "attendance")
 
 
