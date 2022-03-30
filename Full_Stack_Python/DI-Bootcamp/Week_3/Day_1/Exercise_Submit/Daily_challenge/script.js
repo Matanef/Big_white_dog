@@ -16,14 +16,22 @@ for (let planet of solarArray){
     let planetDivs = document.createElement('div')
     planetDivs.classList.add('planet');
     planetDivs.innerText = planet.name;
+    //trying to understanf how i can position both the planets and the moons
+    //searched for DOM position and got "Left", helps but still not what i was looking for.
+    planetDivs.style.left = "420px"
     planetDivs.style.backgroundColor = planet.color
+    // planetDivs.style.position = center
     planetSection.appendChild(planetDivs);
     console.log(planetDivs);
-    for (let moon of solarArray){
+
+    let moons = planet.moons
+    for (let moons of solarArray){
         let moonDivs  = document.createElement('div');
         moonDivs.classList.add('moon');
         moonDivs.innerText = planet.moons;
-        moonDivs.style.backgroundColor = planet.color
+        //can't find a way to spread the moons to the right
+        moonDivs.style.left = "250px"
+        moonDivs.style.backgroundColor = planetDivs
         planetDivs.appendChild(moonDivs);
     }
 }
