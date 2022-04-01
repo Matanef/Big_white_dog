@@ -1,6 +1,6 @@
 .parallax {
   /* The image used */
-  background-image: url("Mass240edit.jpg");
+  background-image: url("backimg3.jpg");
 
   /* Set a specific height */
   max-height: 100%; 
@@ -16,25 +16,25 @@
 
 
 body {
-  background-attachment: fixed;
-  background-image: url("sapan-patel-i9Q9bc-WgfE-unsplash.jpg");
-  background-size: cover;
-  background-position: center 20%;
-  background-repeat: no-repeat;
-  transition: background-image 2s ease-in-out;
+/*  background-attachment: fixed;*/
+height: 100%;
+margin: 0;
+background-image: url("backimg3.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+/*transition: background-image 2s ease-in-out;*/
 }
-.morn {
-  position: absolute;
-  display: inline-flex;
-  z-index: 9;
 
-}
-section {
-  background-image: url("Background.jpg");
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-top: 40px;
+
+.good {
+  text-align: center;
+  padding: 50px;
+  margin-top: 105px ;
+  margin-bottom: 105px;
+  color: white;
+  font-size: 87px;
+  font-family: Daniel;
 }
 
 
