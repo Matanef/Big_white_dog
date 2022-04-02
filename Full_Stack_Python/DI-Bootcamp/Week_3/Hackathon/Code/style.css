@@ -83,7 +83,6 @@ background-: ;
   justify-content: space-around;
   flex-wrap: wrap;
 
-
 /*  grid-template-rows: 32% 32% 32%;*/
 /*  grid-column-gap: 30px;*/
 background-color: none;
@@ -100,6 +99,7 @@ text-align: center;
 
 
 .gridintro {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 2fr 1fr;
@@ -204,3 +204,12 @@ main {
 }
 
 
+
+#equations {
+/*  margin-top: -20px;*/
+font-size: -1em;
+}
+
+.well{
+  margin-top: -5%;
+}
