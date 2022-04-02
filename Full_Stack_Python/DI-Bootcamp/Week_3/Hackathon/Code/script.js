@@ -78,6 +78,7 @@ function generateRandomEquation (){
     		l_result /= l_numberArray[i];
     		l_string += " / " + enclose(l_numberArray[i]);
     		break;
+    		
     	}
     }
 
