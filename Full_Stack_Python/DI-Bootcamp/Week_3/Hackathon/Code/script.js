@@ -1,9 +1,9 @@
-let signsArr = [
-{sign: "+"},
-{sign: "-"},
-{sign: "/"},
-{sign: "*"}
-]
+// let signsArr = [
+// {sign: "+"},
+// {sign: "-"},
+// {sign: "/"},
+// {sign: "*"}
+// ]
 
 // let numArr = [
 // ]

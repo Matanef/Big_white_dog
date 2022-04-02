@@ -1,26 +1,30 @@
-let bodyElement = document.body
-console.log(bodyElement)
 
-let articleelement = bodyElement.children[0]
-console.log(articleelement)
+let h1 = document.querySelectorAll("h1")[0];
+console.log(h1)
 
-let headerFirst = articleelement. children[0]
-console.log(headerFirst)
+let para = document.querySelector("article")
+para.removeChild(para.lastElementChild)  
 
-// let hOneElement = document.getElementsByTagName("h1");
-// console.log(hOneElement);
-// let textHeader = firstElementInList.textContent
-// console.log(textHeader)
-
-let parasElements  = document.querySelectorAll('article > p')
-console.log(parasElements)
-
-console.log(parasElements[0])
-
-
-for (let i = 0; i <= parasElements.length; i++){
-	if (i == parasElements.length)
-		// let lastpar = 
-	console.log(i)
+let h2 = document.querySelector("h2")
+h2.onclick = function() {
+	h2.style.background = 'red'
 }
-console.log(parasElements.length)
+let h3 = document.querySelector("h3")
+h3.addEventListener("click" ,display)
+function display() {
+	h3.style.display = "none"
+}
+let bold = document.querySelector("button")
+bold.addEventListener('click', makebold)
+function makebold() {
+	para.style.fontWeight = 'bold'
+}
+h1.addEventListener("mouseover", hover)
+function hover() {
+	h1.style.fontSize = Math.random()*300 + "px" 
+}
+let p2 = para.children[4]
+p2.onmouseover = function() {
+	p2.style.transition = "opacity 3s"
+	p2.style.opacity = "0"
+}
