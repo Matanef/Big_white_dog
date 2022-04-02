@@ -213,3 +213,7 @@ font-size: -1em;
 .well{
   margin-top: -5%;
 }
+
+.userInput {
+  position: static;
+}

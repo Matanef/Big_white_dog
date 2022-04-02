@@ -19,7 +19,9 @@ function getRandomInt (a_min, a_max){
 	a_max = Math.floor(a_max);
 	return Math.floor(Math.random() * (a_max - a_min + 1)) + a_min;
 }
-
+let firstNumbers = getRandomInt()
+let genNum = firstNumbers
+console.log(genNum);
 
 function enclose (a_number){
 	if (a_number < 0){
@@ -30,17 +32,17 @@ function enclose (a_number){
 }
 
 function generateRandomEquation (){
-	var l_numbers = getRandomInt(2, 2);
-	var l_operations = l_numbers - 1;
+	let l_numbers = getRandomInt(2, 3);
+	let l_operations = l_numbers - 1;
 
 
-	var l_numberArray = [];
-	var l_opArray = [];
+	let l_numberArray = [];
+	let l_opArray = [];
 
 
-	for (var i = 0; i < l_numbers; ++i)	{
-		var l_number = getRandomInt(1, 20);
-		var l_invert = getRandomInt(0, 1);
+	for (let i = 0; i < l_numbers; ++i)	{
+		let l_number = getRandomInt(1, 20);
+		let l_invert = getRandomInt(0, 1);
 		if (l_invert === 0)
 			l_numberArray.push(-l_number);
 		else
@@ -48,7 +50,7 @@ function generateRandomEquation (){
 	}
 
 
-	for (var i = 0; i < l_operations; ++i){
+	for (let i = 0; i < l_operations; ++i){
         // 0: Addition
         // 1: Subtraction
         // 2: Multiplication
@@ -57,9 +59,9 @@ function generateRandomEquation (){
     }
 
 
-    var l_result = l_numberArray[0];
-    var l_string = l_numberArray[0];
-    for (var i = 1; i < l_numbers; ++i){
+    let l_result = l_numberArray[0];
+    let l_string = l_numberArray[0];
+    for (let i = 1; i < l_numbers; ++i){
 
     	switch (l_opArray[i - 1]){
     		case 0:
@@ -78,15 +80,19 @@ function generateRandomEquation (){
     		l_result /= l_numberArray[i];
     		l_string += " / " + enclose(l_numberArray[i]);
     		break;
-    		
+
     	}
     }
 
 
     l_string += " = " + l_result;
     return l_string;
+
 }
 
+let values = generateRandomEquation();
+let resultOut = values.result;
+console.log(resultOut)
 
 $("#btn-generate").click(function () {
 	$("#equations").append(
@@ -94,3 +100,12 @@ $("#btn-generate").click(function () {
 		);
 });
 ;
+
+let userAnswer = document.getElementById("#result")
+
+function comparison(userAnswer, resultOut){
+	if (userAnswer === resultOut){
+
+	}
+
+}
