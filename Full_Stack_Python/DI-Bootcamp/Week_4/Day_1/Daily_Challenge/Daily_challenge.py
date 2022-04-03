@@ -1,3 +1,4 @@
+import random
 userString = input("Please Enter a string with percisely 10 letters: ")
 print(len(userString))
 first_char = userString[0]
@@ -16,3 +17,6 @@ emptyString = ""
 for x in userString:
     emptyString+=x
     print(emptyString)
+
+jumble = "".join(random.sample(userString, len(userString)))
+print(jumble)
