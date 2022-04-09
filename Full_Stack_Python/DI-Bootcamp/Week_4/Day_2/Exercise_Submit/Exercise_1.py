@@ -1,0 +1,20 @@
+my_fav_numbers = set()
+my_fav_numbers.add(3)
+my_fav_numbers.add(7)
+my_fav_numbers.add(13)
+my_fav_numbers.add(19)
+my_fav_numbers.add(21)
+my_fav_numbers.add(24)
+print(my_fav_numbers)
+
+my_fav_numbers.remove(24)
+print(my_fav_numbers)
+
+friend_fav_numbers = set()
+friend_fav_numbers.add(4)
+friend_fav_numbers.add(8)
+friend_fav_numbers.add(15)
+print(friend_fav_numbers)
+
+our_fav_numbers = my_fav_numbers.union(friend_fav_numbers)
+print(our_fav_numbers)
