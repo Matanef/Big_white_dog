@@ -6,17 +6,21 @@ class Farm:
 # 2. currently as i'm writing this i think it should be 
     def __init__(self, name):
         self.name= name
-        self.animals = ["Sheep"]
+        self.animals = []
 
-    def add_animal(self, name):
+    def add_animal(self, name, amount):
         if name in self.animals:
             animalName = self.animals[self]
             # print(animalName)
+            self.animals.append({name: animalName + amount})
+        else:
+            self.animals[name]= amount
+            
 
 
 
 macdonald = Farm("McDonald")
-macdonald.add_animal('cow',5)
+macdonald.add_animal('cow', 5)
 macdonald.add_animal('sheep')
 macdonald.add_animal('sheep')
 macdonald.add_animal('goat', 12)
