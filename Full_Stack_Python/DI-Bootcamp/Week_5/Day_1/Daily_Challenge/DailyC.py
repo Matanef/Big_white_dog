@@ -8,7 +8,7 @@ class Farm:
         self.name= name
         self.animals = {}
 
-    def add_animal(self, name, amount):
+    def add_animal(self, name, amount = 1):
         if name in self.animals:
             animalName = self.animals[self]
             # print(animalName)

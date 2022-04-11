@@ -18,7 +18,7 @@ class Cat():
         return f'{self.name} is just walking around'
 
     def __repr__(self):
-        return f'{self.name} are Walking!!!'
+        return f'{self.name} is Walking!!!'
 
 class Bengal(Cat):
     def sing(self, sounds):
@@ -47,4 +47,37 @@ my_cats.append(bob)
 my_pets = my_cats
 
 print(my_pets)
-print(my_cats[0])
+print(my_cats)
+
+class Dog():
+    def __init__(self, name, age, weight):
+        self.name = name
+        self.age = age
+        self.weight = weight
+        print(f'{self.name} has been INSTANTIATED')
+    
+    def bark(self):
+        return f'{self.name} is Barking'
+
+    def run_speed(self):
+        return self.weight/self.age*10
+
+    def fight(self, other_dog):
+        if self.run_speed() < other_dog.run_speed():
+            return f'{other_dog.name} wins'
+        else: 
+            return f'{self.name} wins'
+
+
+lanou = Dog("Lanou", 8, 35)
+dov = Dog("Dov", 10, 53)
+katzie = Dog("Katzie", 12 , 16)
+
+listOfDogs = []
+
+listOfDogs.append(lanou)
+listOfDogs.append(dov)
+listOfDogs.append(katzie)
+
+print(lanou.fight(katzie))
+
