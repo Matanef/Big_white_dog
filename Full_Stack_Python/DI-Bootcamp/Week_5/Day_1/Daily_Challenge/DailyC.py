@@ -6,7 +6,7 @@ class Farm:
 # 2. currently as i'm writing this i think it should be 
     def __init__(self, name):
         self.name= name
-        self.animals = []
+        self.animals = {}
 
     def add_animal(self, name, amount):
         if name in self.animals:
@@ -14,8 +14,9 @@ class Farm:
             # print(animalName)
             self.animals.append({name: animalName + amount})
         else:
-            self.animals[name]= amount
-            
+            self.animals[name]= int(amount)
+
+    def get_info
 
 
 
