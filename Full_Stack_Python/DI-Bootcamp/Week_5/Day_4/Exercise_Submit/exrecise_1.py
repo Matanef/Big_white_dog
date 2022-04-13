@@ -8,7 +8,7 @@ def get_words_from_file(filename):
         
     # wordPerLine = [wordPerLine.replace("\n", "")]
         word_list = [word.replace("\n", "") for word in word_list]
-        f.close()
+        # f.close()
         return word_list
     
 
