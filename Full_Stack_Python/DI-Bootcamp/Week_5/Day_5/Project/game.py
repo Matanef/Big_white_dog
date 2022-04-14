@@ -3,7 +3,6 @@ from random import choice
 class Game():
     listOfChoise = ['Rock', 'Paper', 'Scissors']
 
-    
     def get_user_item(self): 
         userInput = input("Please Select one of the following options, Rock, Paper, Scissors: ")
         if userInput in self.listOfChoise:
@@ -32,7 +31,7 @@ class Game():
         user_item = self.get_user_item()
         computer_item = self.get_computer_item()
         result = self.get_game_result(user_item, computer_item)
-        print(f'you chose {user_item} while the computer selected {computer_item}')
+        print(f'you chose {user_item} while the computer selected {computer_item}, and the results (drumrolls) {result}')
         return
 
-
+Game()
