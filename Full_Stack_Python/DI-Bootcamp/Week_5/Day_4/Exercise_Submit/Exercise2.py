@@ -15,7 +15,9 @@ sampleJson = {
 print(sampleJson['company']["employee"]["payable"]["salary"])
 print(sampleJson["company"]["employee"]["payable"].get("salary"))
 
-sampleJson["company"]["employee"] = {"BirthDate"}
+# sampleJson["company"]["employee"] = {"BirthDate: "}
+# print(sampleJson)
+sampleJson["company"]["employee"]["BirthDate"] = "24/08/1984"
 print(sampleJson)
 
 f = "json_file.json"
