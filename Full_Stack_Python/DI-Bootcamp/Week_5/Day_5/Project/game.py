@@ -34,4 +34,5 @@ class Game():
         print(f'you chose {user_item} while the computer selected {computer_item}, and the results (drumrolls) {result}')
         return
 
-Game()
+selfveriable = Game()
+print(selfveriable)
