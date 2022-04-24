@@ -1,0 +1,7 @@
+-- select * FROM items, customers;
+-- select item_name from items;
+-- select item_name from items where price > 80;
+-- select item_name from items where price <= 300;
+-- select first_name, last_name from customers where  last_name = 'Smith';
+-- select first_name, last_name from customers where  last_name = 'Jones';
+-- select first_name, last_name from customers where  first_name != 'Scott';
