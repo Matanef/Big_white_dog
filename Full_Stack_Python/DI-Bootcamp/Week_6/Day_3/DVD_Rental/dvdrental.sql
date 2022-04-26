@@ -1,0 +1,7 @@
+-- select *from customer;
+-- select (first_name, last_name) as full_name from customer;
+-- select create_date from customer;
+-- select * from customer order by first_name DESC;
+-- select film_id, title, description, release_year, rental_rate from film order by rental_rate ASC;
+-- select address, address2, phone from address where district = 'Texas';
+-- select * from film where film_id = 15 or film_id = 150;
