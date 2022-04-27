@@ -5,3 +5,9 @@
 -- select film_id, title, description, release_year, rental_rate from film order by rental_rate ASC;
 -- select address, address2, phone from address where district = 'Texas';
 -- select * from film where film_id = 15 or film_id = 150;
+-- select film_id, title, description, length, rental_rate from film where title = 'Metropolis Coma'
+-- select film_id, title, description, length, rental_rate from film where title ilike 'me%';
+-- select title, rental_rate from film where rental_rate<=1 limit 10;
+-- select title, rental_rate from film where rental_rate<=1 and title NOT (select title, rental_rate from film where rental_rate<=1 limit 10) limit 10;
+-- select customer.customer_id, customer.first_name, customer.last_name, payment.amount, payment.payment_date from customer inner join payment on payment.customer_id = customer.customer_id
+select city.city, country.country_id, country.country from city inner join country on city.country_id = country.country_id;
