@@ -37,10 +37,48 @@ print('\n')
 # for question 9 i didn't understand it aswell so what i'm trying to do is to see which item in the order_id appears the most and get it's name.
 chipoMostOrder = chipo['order_id'].mode()
 print(chipoMostOrder)
+print('\n')
 chipoOrderLoc = chipo.loc[chipo['order_id'] == 926]
 print(chipoOrderLoc)
+print('\n')
+# itemAmount = chipo[['item_name', 'quantity']].groupby('item_name').count().sort_values('quantity', ascending = False)
+# print(itemAmount)
 
 # hope this is ok
+chipoMostOrderbyName = chipo['item_name'].mode()
+print("most orderd dish: ",chipoMostOrderbyName)
+print('\n')
+
+#  ok ok i get it now
+chipoMostOrderbyDescription = chipo['choice_description'].mode()
+print("most orderd by description: ",chipoMostOrderbyDescription)
+print('\n')
+
+chipoItemNameCount = chipo['item_name'].count()
+print(chipoItemNameCount)
+print('\n')
+
+removesign = lambda s: s.strip('$')
+noSign = (chipo['item_price'].apply(removesign).astype(np.float64))
+print(noSign)
+print('\n')
+
+revenue = noSign.sum
+print(revenue)
+
+itemAmount = chipo[['item_name', 'quantity']].groupby('item_name').count().sort_values('quantity', ascending = False)
+print(itemAmount)
+print('\n')
+amountItemsSeperate = itemAmount.shape[0]
+print("Amount of items sold seperatly:", amountItemsSeperate)
+
+
+
+
+
+
+
+
 
 
 
