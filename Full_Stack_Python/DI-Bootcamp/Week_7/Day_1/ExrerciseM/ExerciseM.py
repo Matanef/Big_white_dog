@@ -193,6 +193,38 @@ print(normMatrix)
 # ---------------------------------------------------------------
 
 twoByFour = np.arange(1,9).reshape((2,4))
+print('twobyfour')
 print(twoByFour)
+print('\n')
 newTwoByFour = np.dtype([('dtype', np.int16)])
+print('newTwoByFour')
 print(newTwoByFour)
+print('\n')
+
+# ---------------------------------------------------------------
+
+matrixFivebythree = np.random.random((5,3))*10
+matrixThreeByTwo = np.random.random((3,2))*10
+print('matrixFivebythree')
+print(matrixFivebythree)
+print('\n')
+print('matrixThreeByTwo')
+print(matrixThreeByTwo)
+print('\n')
+
+print('Multiplication of 5x3 by 3x2')
+print(np.dot(matrixFivebythree,matrixThreeByTwo))
+print('\n')
+
+# ---------------------------------------------------------------
+negate = np.arange(11)
+print(negate)
+
+negateNew = np.negative(negate)
+print(negateNew)
+
+negate[(3 < negate) & (negate <= 8)] *= -1
+print(negate)
+
+# ---------------------------------------------------------------
+
