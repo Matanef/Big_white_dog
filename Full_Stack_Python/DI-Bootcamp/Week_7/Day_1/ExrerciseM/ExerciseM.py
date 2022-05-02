@@ -166,3 +166,33 @@ x = np.zeros((8,8),dtype=int)
 x[1::2,::2] = 1
 x[::2,1::2] = 1
 print(x)
+
+# ---------------------------------------------------------------
+
+# ravel = np.unravel_index([22, 41, 37], (7,6))
+# print(ravel)
+
+# ---------------------------------------------------------------
+
+# testArray = np.ones((2,2))
+print('Tile')
+x = np.zeros((2,2),dtype=int)
+x[1::2,::2] = 1
+x[::2,1::2] = 1
+print(np.tile(x, (4,4)))
+
+# ---------------------------------------------------------------
+
+matrixFive = np.random.random((5,5))
+print(matrixFive)
+xmax, xmin = matrixFive.max(), matrixFive.min()
+normMatrix = (matrixFive - xmin)/(xmax - xmin)
+print("After normalization:")
+print(normMatrix)
+
+# ---------------------------------------------------------------
+
+twoByFour = np.arange(1,9).reshape((2,4))
+print(twoByFour)
+newTwoByFour = np.dtype([('dtype', np.int16)])
+print(newTwoByFour)
