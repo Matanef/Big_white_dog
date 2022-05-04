@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import pandas as dp
 import numpy as np
+# import seaborn as sns
+# df = sns.load_dataset('iris')
 
 dataFrame = dp.read_csv('https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv')
 
@@ -25,10 +27,18 @@ print('\n')
 #  1. Sex
 #  2. Embarked
 
+
+
+dataFrame.dropna(inplace=True)
+
 y = dataFrame['Survived']
 x = dp.get_dummies(dataFrame, columns=['Sex', 'Age'])
 del x['Survived']
-del x['Sex']
-del x['Age']
+del x['Pclass']
+del x['Ticket']
+
+# i'm sorry i don't get it
 
 print(x)
+print(x[0:43:4])
+

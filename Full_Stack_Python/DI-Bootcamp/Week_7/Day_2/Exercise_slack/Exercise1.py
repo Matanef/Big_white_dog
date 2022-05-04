@@ -82,3 +82,5 @@ print("Amount of items sold seperatly:", amountItemsSeperate)
 
 
 
+
+
