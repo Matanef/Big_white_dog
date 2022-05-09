@@ -1,0 +1,25 @@
+    {%extends 'base.html'%}
+
+    {%block main%}
+
+    {%if gender == 'M'%}
+
+    MR.{{name}}
+    <h3>Favorite books:</h3>
+    {% for book in favorite_books %}
+    {{book}}
+
+    {%endfor%}
+    {%endif%}
+
+    {%if gender == 'F'%}
+
+    MRs.{{name}}
+    <h3>Favorite books:</h3>
+    {%for book in favorite_books %}
+    {{book}}
+    {%endfor%}
+
+    {%endif%}
+
+    {%endblock%}
