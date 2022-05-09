@@ -4,18 +4,19 @@ import json
 # Create your views here.
 
 def family(request, x):
-    family = [
+    family = {
         
         'id': 7,
         'name': 3
         return render(request, 'family.html', {})
-    ]
+    }
     
 
 def animal(request, x):
     {
-    }
     return render(request, 'animal.html', {})
+    }
+
 
 
 context = {
