@@ -19,7 +19,6 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('info/', include('info.urls')),
-    path('/family/<int:x>', views.family_list, name='family_list'),
-    path('/animal/<int:x>', views.animal_stats, name='anumal_stats'),
+    path('/family/<int:x>', views.family, name='family'),
+    path('/animal/<int:x>', views.animal, name='animal'),
 ]

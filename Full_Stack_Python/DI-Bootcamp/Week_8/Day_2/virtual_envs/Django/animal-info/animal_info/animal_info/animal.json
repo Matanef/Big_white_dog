@@ -26,7 +26,7 @@
             "height":4.2,
             "speed": 34,
             "family": 1 
-        }
+        },
         {
             "id": 4,
             "name": "Crocodile",
@@ -35,9 +35,9 @@
             "height":5.1816,
             "speed": 26,
             "family": 4 
-        }
+        },
         {
-            "id": 4,
+            "id": 5,
             "name": "Scorpion",
             "legs": 8,
             "weight": 0.6,
@@ -55,23 +55,23 @@
         {
             "id": 2,
             "name": "Caninae"
-        }
+        },
         {
             "id": 3,
             "name": "Mammal"
-        }
+        },
         {
             "id": 4,
             "name": "Reptile"
-        }
+        },
         {
             "id": 5,
             "name": "Insect"
-        }
+        },
         {
             "id": 6,
             "name": "Arachnid"
-        }
+        },
         {
             "id": 7,
             "name": "Amphibian"
