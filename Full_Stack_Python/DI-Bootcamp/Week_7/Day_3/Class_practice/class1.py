@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd 
 import numpy as np
-import random
+from random import random
 
 # matrix = np.random.random((3,3))
 # print(matrix)
