@@ -4,9 +4,10 @@ from . import views # . is shorthand for the current directory
 # one urlpattern per line
 urlpatterns = [
     path('index', views.index, name='index'),
-    # path('About_website', views.About, name = 'About')
-    path('about/<str:name>/<str:last_name>/', views.About, name='about'),
-    path('profile', views.profile, name='profile'),
+    path('posts', views.posts, name='posts'),
+    path('email', views.email, name='email'),
+    path('contact', views.contact, name='contact'),
+    path('signup', views.signup, name='signup'),
 ]
 
 # '' : empty string and /

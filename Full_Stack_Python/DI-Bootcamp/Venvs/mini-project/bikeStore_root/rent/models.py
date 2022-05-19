@@ -16,8 +16,16 @@ class Customer(models.Model):
 class Vehicle_Type(models.Model):
      name = models.CharField(max_length=100)
 
+def __str__(self):
+    return self.name
+
+
 class Vehicle_Size(models.Model):
      name = models.CharField(max_length=100)
+
+def __str__(self):
+    return self.name
+
 
 class Vehicle(models.Model):
     vehicle_type = models.ForeignKey(Vehicle_Type, on_delete=models.CASCADE)
