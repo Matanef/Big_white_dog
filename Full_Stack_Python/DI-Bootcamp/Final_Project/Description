@@ -1,0 +1,93 @@
+Poroject name: Walker
+
+short description:
+the application will provide the ability to randomize your dog walk routes depending on the user input regarding the length of the route(meters, Kilometers)
+the application will also provide "Suggested routes" shared by other users.
+
+Long Description:
+Using "Walker" we will be able to generate randomize routes depending on user input, defining the length of the trip
+the user will be presented with an input field and a big blue round button.
+in addition at the buttom of the screen we will have a nav bar directing to "Suggested routes"
+once the variables were insrted and the big button pushed we will be transfred to a map.
+in addition in this screen you will be able to take a picture and add it to the drawn route.
+We will also be able to save favorite routes and share them as "Suggested routes" which will allow different users to use those routes.
+
+* since a routing app will gather information regarding the user whereabouts a verification system will also need to be inplace.
+
+1. In the input field the user will insert the amout of meters the user would like the walk would be (will need to take in mind avereges regarding the 		length of the walk).
+2. once the user hit the blue button a map will appear with a drawn route on it (will need to use google maps API).
+3. as mentioned a navbar will also be present allowing the user to nevigate to the "Suggested routes" page and to gallery page (the navbar will stay even after the blue button was pushed)
+4. once the route was calculates and presented on the map the yser will be able to save it a a "Favorite route"
+5. the "Suggested routes" page will show different routes, shared by other users depnding on the amount of meters/Kilometers inserted by the user.
+6. the gallery will allow the user to scroll through his pictures taken during the walks.
+7. maybe later on will add rating system or like system so other users will be able to share their pictures.
+
+
+
+
+
+First steps:
+1. create a Django Project "Walker"
+2. Specify the Apps - Walker, Suggested, authentication, Gallery, Favorite
+
+
+Technical details:
+1. project is Django based, meaning the following will be used in the proccess: views, models, forms, templates, static files etc
+2. the implemented map will use the Google Maps API which will allow us to build a location-based application and in this case will allow us to set 		routes depending on the user defenisions.
+To define specific routes according to user specifications, we will use Routes Preferred API.
+this will allow us to customize a route by specifying a route objective using the ComputeCustomRoutes method.
+
+
+3. building a database (postgres) to store users, and "Suggested routes". Database will be located in the backend server using relative PATHS.
+
+Tables that will be included:
+Users: Username, First name, Last name, Password, Email.
+
+if the user would like he could later on specify it's user account by providing the next information:
+Pet breed, Pet age (will think of additional fields later on).
+
+"Suggested routes": this information should be taken from the API and it is as follows:
+City, Length, Rating, Scenery, Quick.
+the Scenery will need to be added by the user, meaning lets  say that the user generate a route he can label it as Scenery as well as Quick.
+this will be shown in the "Suggested routes" page.
+
+"Favorite Routes and "Suggested routes" will be stored on the backend server inorder to be able to publish\broadcast it to other users.
+
+
+4. User Interface: 
+1. This should include HTML, as well as CSS and JS.
+2. Based on Django’s views/templates
+Views for: authentication, user details, generate route, take a picture, share route.
+
+
+
+
+
+
+
+Create a Custom Route - https://developers.google.com/maps/documentation/routes_preferred/custom_routes
+Google Navigation SDK - https://developers.google.com/maps/documentation/navigation
+Youttube - customized routes - https://www.youtube.com/watch?v=CdDXbvBFXLY
+
+
+The travelling salesman problem (also called the travelling salesperson problem or TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?" It is an NP-hard problem in combinatorial optimization, important in theoretical computer science and operations research. 
+https://en.wikipedia.org/wiki/Travelling_salesman_problem
+
+
+
+Multiple-Destinations-Route-Optimizer 
+https://github.com/oisy92/Multiple-Destinations-Route-Optimizer
+
+Visualization in Python: Finding Routes between Points
+https://towardsdatascience.com/visualization-in-python-finding-routes-between-points-2d97d4881996
+
+
+
+current location:
+
+<input type="button" value="Set Start/End Location" onclick="codeAddress()" onsubmit="codeAddress()" onchange="codeAddress()">
+
+Geocoding Service | Maps JavaScript API - Google Developers
+https://developers.google.com/maps/documentation/javascript/geocoding
+
+

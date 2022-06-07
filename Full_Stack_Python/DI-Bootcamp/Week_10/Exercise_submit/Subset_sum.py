@@ -1,3 +1,10 @@
+import random
+nums = None
+def getnums(n):
+    global nums
+    nums = [random.randint(1,n*100) for x in range(n)]
+    print(f"Generated list 'nums' of {n} random numbers")
+
 def subsetsum(numbers , target):
     check_for_numbers = {}
     for num in numbers:
