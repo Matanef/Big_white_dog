@@ -73,11 +73,13 @@ class SignUpView(AjaxFormMixin, FormView):
 	#reCAPTURE key required in context
 	def get_context_data(self, **kwargs):
 		context = super().get_context_data(**kwargs)
-		# context["recaptcha_site_key"] = settings.RECAPTCHA_PUBLIC_KEY
+		context["recaptcha_site_key"] = settings.RECAPTCHA_PUBLIC_KEY
 		return context
 
 	#over write the mixin logic to get, check and save reCAPTURE score
 	def form_valid(self, form):
+		resultTwo = "Success"
+		messageTwo = "Thank you for signing up"
 		response = super(AjaxFormMixin, self).form_valid(form)	
 		if self.request.is_ajax():
 			token = form.cleaned_data.get('token')
@@ -93,8 +95,7 @@ class SignUpView(AjaxFormMixin, FormView):
 				login(self.request, obj, backend='django.contrib.auth.backends.ModelBackend')
 
 				#change result & message on success
-				resultTwo = "Success"
-				messageTwo = "Thank you for signing up"
+
 
 				
 			data = {'result': resultTwo, 'message': messageTwo}
