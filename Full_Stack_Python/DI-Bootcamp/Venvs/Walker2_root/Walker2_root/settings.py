@@ -131,8 +131,6 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
 
-GOOGLE_API_KEY = "AIzaSyDFiPffnGkYq5SIaLBh3ugT2aaVjn3XPsQ"
-
 RECAPTCHA_PUBLIC_KEY = "6LeRo00gAAAAAD1SvpNTXf-nyDFqeFKR_wGnLHqP"
 
 RECAPTCHA_PRIVATE_KEY = "6LeRo00gAAAAAD1SvpNTXf-nyDFqeFKR_wGnLHqP"
@@ -141,6 +139,8 @@ RECAPTCHA_PRIVATE_KEY = "6LeRo00gAAAAAD1SvpNTXf-nyDFqeFKR_wGnLHqP"
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+GOOGLE_API_KEY = ""
 
 LOGIN_URL = "users:sign-in"
 LOGIN_REDIRECT_URL = "users:account"
