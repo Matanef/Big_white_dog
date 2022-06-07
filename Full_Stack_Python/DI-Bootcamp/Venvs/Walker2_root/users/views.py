@@ -43,13 +43,14 @@ def profile_view(request):
 	form = UserProfileForm(instance = up) 
 
 	if request.is_ajax():
+		result = "Success"
+		message = "Your profile has been updated"
 		form = UserProfileForm(data = request.POST, instance = up)
 		if form.is_valid():
 			obj = form.save()
 			obj.has_profile = True
 			obj.save()
-			result = "Success"
-			message = "Your profile has been updated"
+
 		else:
 			message = FormErrors(form)
 		data = {'result': result, 'message': message}
