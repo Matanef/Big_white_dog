@@ -54,15 +54,16 @@ font-style: oblique ;
 
 }
 .pict {
-	background-color: rgb(43, 32, 10);
-	height: 175px;
+	background-repeat: no-repeat;
+	background-color: rgb(251, 240, 238 );
+	height: 168px;
 	width: 320px;
 /*	padding: 15px;*/
 }
 
 .contact {
 	width: 320px;
-	height: 330px;
+	height: 333px;
 /*	padding: 15px;*/
 }
 .Education{
@@ -94,26 +95,31 @@ font-style: oblique ;
 flex-direction: column;
 justify-content: flex-start;*/
 border: 2px solid salmon;
+margin-top: -80px;
 }
 
 .init {
 	font-weight: bold;
-	font-size: 17px;
-	font-style: ;
+	font-size: 25px;
+	font-style: oblique 10deg;
+	margin-top: inherit;
+	padding-top: 8px;
 
 }
 .sub_init {
 	font-weight: initial;
-	font-size: 10px;
+	font-size: 13px;
+	margin-top: -10px;
 }
 .init_add {
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 18px;
 	font-style: ;
 }
 ul {
 	font-weight: initial;
 	font-size: 10px;
+	margin-top: -7px;
 }
 
 footer {
@@ -127,12 +133,26 @@ footer {
 div h5 {
 	font-family: 'Teko', sans-serif;
 	font-size: 26px;
+
 }
 
 h4 {
-
+	margin-top: -15px;
 	font-size: 34px;
 }
 .skill_list {
 	font-size: 25px;
+}
+img {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 45%;
+	margin-left: 29px;
+	border-style: double;
+}
+
+.portrait {
+	height: 100%;
+	width: 100%;
+
 }
