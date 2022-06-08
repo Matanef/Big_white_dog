@@ -29,7 +29,7 @@
 	flex-wrap: wrap;
 	justify-content: flex-start;
 /*	align-content: center;*/
-width: 300px;
+width: 330px;
 }
 
 .right_w {
@@ -81,7 +81,7 @@ border: 2px solid salmon;
 footer {
 	background-color: black;
 	border-radius: 66px;
-	position: absolute ;
+	/*position: absolute ;*/
 	width: 1050px;
 	height: 35px;
 	bottom: 0;

@@ -5,10 +5,15 @@ $.getScript( "https://maps.googleapis.com/maps/api/js?key=" + google_api_key + "
 
 })
 
+
+
+
+
+
 var auto_fields = ['a', 'b', 'c', 'd']
 
 function initAutocomplete() {
-
+    console.log('autocomplete');
   for (i = 0; i < auto_fields.length; i++) {
     var field = auto_fields[i]
     window['autocomplete_'+field] = new google.maps.places.Autocomplete(
@@ -21,15 +26,22 @@ function initAutocomplete() {
 
   autocomplete_a.addListener('place_changed', function(){
           onPlaceChanged('a')
+          console.log('a')
       });
   autocomplete_b.addListener('place_changed', function(){
           onPlaceChanged('b')
+          console.log('b')
+
       });
   autocomplete_c.addListener('place_changed', function(){
           onPlaceChanged('c')
+          console.log('c')
+
       });
   autocomplete_d.addListener('place_changed', function(){
           onPlaceChanged('d')
+          console.log('d')
+
       });
 }
 
@@ -52,8 +64,7 @@ function onPlaceChanged (addy){
 
             $('#' + lat_id).val(latitude) 
             $('#' + long_id).val(longitude) 
-
-            CalcRoute()
+            // CalcRoute()
         } 
     }); 
 }
@@ -61,19 +72,18 @@ function onPlaceChanged (addy){
 
 function validateForm() {
     var valid = true;
-    $('.geo').each(function () {
-        if ($(this).val() === '') {
-            valid = false;
-            return false;
-        }
-    });
+    if (field1.value == '' || field2.value == '' || field3.value == '') {
+        console.log(field1, field2, field3)
+        return false
+    } 
     return valid
 }
 
 
 function CalcRoute(){
-
+    console.log('calculating')
     if ( validateForm() == true){
+        console.log("validate")
       var params = {
           lat_a: $('#id-lat-a').val(),
           long_a: $('#id-long-a').val(),
@@ -93,5 +103,19 @@ function CalcRoute(){
       url = '/map?' + query
       window.location.assign(url)
     }
-
 }
+let submit = document.querySelector("#submit");
+let field1 = document.querySelector('#id-google-address-a');
+let field2 = document.querySelector('#id-google-address-d');
+let field3 = document.querySelector('#id-google-address-c');
+let field4 = document.querySelector('#id-google-address-b');
+field1.addEventListener('mouseleave', ()=> {
+    field4.value = field1.value;
+    console.log(field4.value);
+});
+
+submit.addEventListener('click', () => {
+    field4.value = field1.value;
+    CalcRoute()
+});
+

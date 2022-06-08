@@ -13,9 +13,7 @@ def route(request):
 	return render(request, 'main/route.html', context)
 
 
-'''
-Basic view for displaying a map 
-'''
+
 def map(request):
 
 	lat_a = request.GET.get("lat_a", None)

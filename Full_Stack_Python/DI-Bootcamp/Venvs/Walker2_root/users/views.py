@@ -43,14 +43,13 @@ def profile_view(request):
 	form = UserProfileForm(instance = up) 
 
 	if request.is_ajax():
-		result = "Success"
-		message = "Your profile has been updated"
 		form = UserProfileForm(data = request.POST, instance = up)
 		if form.is_valid():
 			obj = form.save()
 			obj.has_profile = True
 			obj.save()
-
+			result = "Success"
+			message = "Your profile has been updated"
 		else:
 			message = FormErrors(form)
 		data = {'result': result, 'message': message}
@@ -79,8 +78,6 @@ class SignUpView(AjaxFormMixin, FormView):
 
 	#over write the mixin logic to get, check and save reCAPTURE score
 	def form_valid(self, form):
-		resultTwo = "Success"
-		messageTwo = "Thank you for signing up"
 		response = super(AjaxFormMixin, self).form_valid(form)	
 		if self.request.is_ajax():
 			token = form.cleaned_data.get('token')
@@ -96,7 +93,8 @@ class SignUpView(AjaxFormMixin, FormView):
 				login(self.request, obj, backend='django.contrib.auth.backends.ModelBackend')
 
 				#change result & message on success
-
+				resultTwo = "Success"
+				messageTwo = "Thank you for signing up"
 
 				
 			data = {'result': resultTwo, 'message': messageTwo}

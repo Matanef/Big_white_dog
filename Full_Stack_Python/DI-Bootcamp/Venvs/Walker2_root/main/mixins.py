@@ -10,9 +10,6 @@ from django.http import JsonResponse
 
 
 def FormErrors(*args):
-	'''
-	Handles form error that are passed back to AJAX calls
-	'''
 	message = ""
 	for f in args:
 		if f.errors:
@@ -22,7 +19,6 @@ def FormErrors(*args):
 
 def reCAPTCHAValidation(token):
 
-	''' reCAPTCHA validation '''
 	result = requests.post(
 		'https://www.google.com/recaptcha/api/siteverify',
 		 data={
@@ -35,9 +31,6 @@ def reCAPTCHAValidation(token):
 
 
 def RedirectParams(**kwargs):
-	'''
-	Used to append url parameters when redirecting users
-	'''
 	url = kwargs.get("url")
 	params = kwargs.get("params")
 	response = redirect(url)
@@ -49,9 +42,7 @@ def RedirectParams(**kwargs):
 
 class AjaxFormMixin(object):
 
-	'''
-	Mixin to ajaxify django form - can be over written in view by calling form_valid method
-	'''
+
 
 	def form_invalid(self, form):
 		response = super(AjaxFormMixin, self).form_invalid(form)
