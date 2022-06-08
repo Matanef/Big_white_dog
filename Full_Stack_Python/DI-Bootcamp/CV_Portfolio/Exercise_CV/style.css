@@ -14,13 +14,15 @@
 	justify-content: center;
 	align-content: center;
 	width: 720px;
+	height: 100%;
 }
 .left_w {
-	margin-top: 14%;
-	display: flex;
-	flex-direction: column;
-	border: 2px solid blueviolet;
-	height: 50%;
+/*	margin-top: 14%;*/
+display: flex;
+flex-direction: column;
+border: 2px solid blueviolet;
+padding: 15px;
+/*height: 25%;*/
 }
 .right_sec {
 	background-color: rgb(10, 18, 43);
@@ -31,41 +33,47 @@
 	justify-content: flex-start;
 /*	align-content: center;*/
 width: 330px;
+/*padding: 15px;*/
 }
 
 .right_w {
 	display: flex;
-	flex-direction: column-reverse;
+	flex-direction: column;
 	justify-content: center;
 	border: 2px solid silver;
 	width: 320px;
-/*	height: 480px;
-*/
+/*	height: 480px;*/
+padding: 15px;
+font-style: oblique ;
 }
 .name {
 	background-image: url(name2.jpg);
 	background-repeat: no-repeat;
 	background-position: 24px 25px;
-	height: 340px;
+	height: 165px;
+
 }
 .pict {
 	background-color: rgb(43, 32, 10);
 	height: 175px;
 	width: 320px;
+/*	padding: 15px;*/
 }
 
 .contact {
 	width: 320px;
 	height: 330px;
+/*	padding: 15px;*/
 }
 .Education{
 	width: 320px;
 	height: 390px;
-	padding: 15px;
+/*	padding: 15px;*/
 }
 .skills {
 	width: 320px;
 	height: 450px;
+/*	padding: 15px;*/
 }
 .education {
 	background-image: url(SplitShire-0613.png);
@@ -73,9 +81,10 @@ width: 330px;
 }
 .experience {
 	background-color: rgb(243, 158, 41);
-	height: 500px;
-
+	height: 75%;
 }
+
+
 .time
 
 .time_inpar {
@@ -89,18 +98,22 @@ border: 2px solid salmon;
 
 .init {
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 17px;
 	font-style: ;
 
 }
 .sub_init {
-	font-weight: 100;
-	font-style: italic;
+	font-weight: initial;
+	font-size: 10px;
 }
 .init_add {
 	font-weight: bold;
-	font-size: 10px;
+	font-size: 13px;
 	font-style: ;
+}
+ul {
+	font-weight: initial;
+	font-size: 10px;
 }
 
 footer {
@@ -114,4 +127,12 @@ footer {
 div h5 {
 	font-family: 'Teko', sans-serif;
 	font-size: 26px;
+}
+
+h4 {
+
+	font-size: 34px;
+}
+.skill_list {
+	font-size: 25px;
 }
