@@ -5,14 +5,10 @@ $.getScript( "https://maps.googleapis.com/maps/api/js?key=" + google_api_key + "
 
 })
 
-navigator.geolocation.getCurrentPosition(
-    function (position) {
-    //    initMap(position.coords.latitude, position.coords.longitude)
-    },
-    function errorCallback(error) {
-       console.log(error)
-    }
- );
+
+
+
+
 
 var auto_fields = ['a', 'b', 'c', 'd']
 

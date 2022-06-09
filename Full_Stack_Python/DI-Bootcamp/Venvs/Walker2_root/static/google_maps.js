@@ -31,7 +31,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         destination: destination,
         waypoints: waypts,
         optimizeWaypoints: true,
-        travelMode: google.maps.TravelMode.DRIVING,
+        travelMode: google.maps.TravelMode.WALKING,
     }, function(response, status) {
       if (status === 'OK') {
         directionsDisplay.setDirections(response);

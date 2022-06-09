@@ -24,7 +24,7 @@ ul.sidenav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 17%;
+  width: 15%;
   margin: 14px;
   background-color: #f1f1f1;
   position: fixed;
@@ -51,10 +51,9 @@ ul.sidenav li a:hover:not(.active) {
 
 .div-container {
 
-  margin-left: 17%;
+  margin-left: 25%;
   padding: 1px 16px;
   height: 1000px;
-  width: 65%
 }
 
 @media screen and (max-width: 900px) {
@@ -131,7 +130,7 @@ input, select{
   user-select: none;
 }
 
-/* Hide the browser's default checkbox */
+
 .check-container input {
   position: absolute;
   opacity: 0;
@@ -140,7 +139,7 @@ input, select{
   width: 0;
 }
 
-/* Create a custom checkbox */
+
 .checkmark {
   position: absolute;
   top: 0;
@@ -157,7 +156,7 @@ input, select{
 
 /* When the checkbox is checked, add a green background */
 .check-container input:checked ~ .checkmark {
-  background-color: #9c07b6;
+  background-color: #3a95f0;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -225,11 +224,11 @@ input, select{
 }
 
 input:checked + .slider {
-  background-color: #9c07b6;
+  background-color: #3a95f0;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #9c07b6;
+  box-shadow: 0 0 1px #3a95f0;
 }
 
 input:checked + .slider:before {
@@ -248,7 +247,7 @@ input:checked + .slider:before {
 }
 
 button[type=submit] {
-  background-color: #9c07b6;
+  background-color: #3a95f0;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -257,7 +256,7 @@ button[type=submit] {
 }
 
 button[type=submit]:hover {
-  background-color: #730786;
+  background-color: #3a95f0;
 }
 
 .container {
@@ -283,7 +282,7 @@ table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #9c07b6;
+  background-color: #3a95f0;
   color: white;
 }
 

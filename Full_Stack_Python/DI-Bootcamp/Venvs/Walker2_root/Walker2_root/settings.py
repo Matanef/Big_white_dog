@@ -142,7 +142,7 @@ RECAPTCHA_PRIVATE_KEY = "6LeRo00gAAAAAD1SvpNTXf-nyDFqeFKR_wGnLHqP"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-GOOGLE_API_KEY = ""
+GOOGLE_API_KEY = "AIzaSyDFiPffnGkYq5SIaLBh3ugT2aaVjn3XPsQ"
 
 LOGIN_URL = "users:sign-in"
 LOGIN_REDIRECT_URL = "users:account"
