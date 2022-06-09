@@ -77,7 +77,6 @@ font-style: oblique ;
 /*	padding: 15px;*/
 }
 .education {
-	background-image: url(SplitShire-0613.png);
 	background-size: cover;
 }
 .experience {
@@ -107,18 +106,18 @@ margin-top: -80px;
 
 }
 .sub_init {
-	font-weight: initial;
-	font-size: 13px;
+	font-weight: bold;
+	font-size: 16px;
 	margin-top: -10px;
 }
 .init_add {
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 20px;
 	font-style: ;
 }
 ul {
 	font-weight: initial;
-	font-size: 10px;
+	font-size: 14px;
 	margin-top: -7px;
 }
 
@@ -126,14 +125,14 @@ footer {
 	background-color: black;
 	border-radius: 5px;
 	/*position: absolute ;*/
-	width: 1050px;
+	width: 100%;
 	height: 35px;
 	bottom: 0;
 }
 div h5 {
 	font-family: 'Teko', sans-serif;
 	font-size: 26px;
-
+	margin-top: -5px;
 }
 
 h4 {
@@ -141,9 +140,9 @@ h4 {
 	font-size: 34px;
 }
 .skill_list {
-	font-size: 25px;
+	font-size: 19px;
 }
-img {
+.portrait img {
 	max-width: 100%;
 	max-height: 100%;
 	border-radius: 45%;
@@ -155,4 +154,13 @@ img {
 	height: 100%;
 	width: 100%;
 
+}
+.left_w.about.me {
+	background-image: url(SplitShire-0613.png);
+	background-size: 100% 100%;
+	mix-blend-mode: difference  ; 
+	height: 200px;
+}
+.ba {
+	font-weight: bolder;
 }
