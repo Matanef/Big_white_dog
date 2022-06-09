@@ -164,3 +164,12 @@ h4 {
 .ba {
 	font-weight: bolder;
 }
+footer {
+	
+	height: 23px;
+}
+.footerText{
+	color: rgb(131, 131, 131);
+	margin-top: 5px;
+	margin-left: 4px;
+}
